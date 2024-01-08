@@ -1,0 +1,2151 @@
+bigram,category,value
+donald-trump,SPORTS,39.0
+u-s,SPORTS,144.0
+hillary-clinton,SPORTS,0.0
+new-york,SPORTS,43.0
+year-old,SPORTS,37.0
+white-house,SPORTS,7.0
+bernie-sander,SPORTS,0.0
+supreme-court,SPORTS,0.0
+health-care,SPORTS,0.0
+climate-change,SPORTS,0.0
+new-year,SPORTS,0.0
+super-bowl,SPORTS,117.0
+fashion-week,SPORTS,0.0
+look-like,SPORTS,19.0
+morning-email,SPORTS,0.0
+stephen-colbert,SPORTS,0.0
+north-korea,SPORTS,0.0
+kim-kardashian,SPORTS,0.0
+ted-cruz,SPORTS,0.0
+need-know,SPORTS,0.0
+fox-news,SPORTS,0.0
+valentine-day,SPORTS,0.0
+taylor-swift,SPORTS,0.0
+mother-day,SPORTS,0.0
+paul-ryan,SPORTS,0.0
+social-medium,SPORTS,0.0
+photo-poll,SPORTS,0.0
+game-throne,SPORTS,0.0
+joe-biden,SPORTS,0.0
+michelle-obama,SPORTS,0.0
+red-carpet,SPORTS,0.0
+jimmy-kimmel,SPORTS,0.0
+trump-administration,SPORTS,0.0
+high-school,SPORTS,39.0
+sexual-assault,SPORTS,11.0
+open-letter,SPORTS,0.0
+istar-war,SPORTS,0.0
+mental-health,SPORTS,0.0
+box-office,SPORTS,0.0
+jimmy-fallon,SPORTS,0.0
+york-city,SPORTS,0.0
+trump-say,SPORTS,0.0
+kate-middleton,SPORTS,0.0
+north-carolina,SPORTS,12.0
+weight-loss,SPORTS,0.0
+kanye-west,SPORTS,0.0
+planned-parenthood,SPORTS,0.0
+week-photo,SPORTS,0.0
+trevor-noah,SPORTS,0.0
+marco-rubio,SPORTS,0.0
+donald-trump,TECH,5.0
+u-s,TECH,30.0
+hillary-clinton,TECH,0.0
+new-york,TECH,17.0
+year-old,TECH,6.0
+white-house,TECH,6.0
+bernie-sander,TECH,0.0
+supreme-court,TECH,0.0
+health-care,TECH,0.0
+climate-change,TECH,5.0
+new-year,TECH,0.0
+super-bowl,TECH,3.0
+fashion-week,TECH,0.0
+look-like,TECH,4.0
+morning-email,TECH,0.0
+stephen-colbert,TECH,0.0
+north-korea,TECH,0.0
+kim-kardashian,TECH,0.0
+ted-cruz,TECH,0.0
+need-know,TECH,6.0
+fox-news,TECH,0.0
+valentine-day,TECH,0.0
+taylor-swift,TECH,0.0
+mother-day,TECH,0.0
+paul-ryan,TECH,0.0
+social-medium,TECH,22.0
+photo-poll,TECH,0.0
+game-throne,TECH,0.0
+joe-biden,TECH,0.0
+michelle-obama,TECH,0.0
+red-carpet,TECH,0.0
+jimmy-kimmel,TECH,0.0
+trump-administration,TECH,0.0
+high-school,TECH,0.0
+sexual-assault,TECH,0.0
+open-letter,TECH,0.0
+istar-war,TECH,5.0
+mental-health,TECH,0.0
+box-office,TECH,0.0
+jimmy-fallon,TECH,0.0
+york-city,TECH,4.0
+trump-say,TECH,0.0
+kate-middleton,TECH,0.0
+north-carolina,TECH,0.0
+weight-loss,TECH,0.0
+kanye-west,TECH,0.0
+planned-parenthood,TECH,0.0
+week-photo,TECH,0.0
+trevor-noah,TECH,0.0
+marco-rubio,TECH,0.0
+donald-trump,CULTURE & ARTS,0.0
+u-s,CULTURE & ARTS,0.0
+hillary-clinton,CULTURE & ARTS,0.0
+new-york,CULTURE & ARTS,13.0
+year-old,CULTURE & ARTS,4.0
+white-house,CULTURE & ARTS,0.0
+bernie-sander,CULTURE & ARTS,0.0
+supreme-court,CULTURE & ARTS,0.0
+health-care,CULTURE & ARTS,0.0
+climate-change,CULTURE & ARTS,0.0
+new-year,CULTURE & ARTS,2.0
+super-bowl,CULTURE & ARTS,0.0
+fashion-week,CULTURE & ARTS,0.0
+look-like,CULTURE & ARTS,0.0
+morning-email,CULTURE & ARTS,0.0
+stephen-colbert,CULTURE & ARTS,0.0
+north-korea,CULTURE & ARTS,0.0
+kim-kardashian,CULTURE & ARTS,0.0
+ted-cruz,CULTURE & ARTS,0.0
+need-know,CULTURE & ARTS,0.0
+fox-news,CULTURE & ARTS,0.0
+valentine-day,CULTURE & ARTS,2.0
+taylor-swift,CULTURE & ARTS,0.0
+mother-day,CULTURE & ARTS,0.0
+paul-ryan,CULTURE & ARTS,0.0
+social-medium,CULTURE & ARTS,0.0
+photo-poll,CULTURE & ARTS,0.0
+game-throne,CULTURE & ARTS,0.0
+joe-biden,CULTURE & ARTS,0.0
+michelle-obama,CULTURE & ARTS,0.0
+red-carpet,CULTURE & ARTS,0.0
+jimmy-kimmel,CULTURE & ARTS,0.0
+trump-administration,CULTURE & ARTS,0.0
+high-school,CULTURE & ARTS,0.0
+sexual-assault,CULTURE & ARTS,0.0
+open-letter,CULTURE & ARTS,0.0
+istar-war,CULTURE & ARTS,0.0
+mental-health,CULTURE & ARTS,0.0
+box-office,CULTURE & ARTS,0.0
+jimmy-fallon,CULTURE & ARTS,0.0
+york-city,CULTURE & ARTS,0.0
+trump-say,CULTURE & ARTS,0.0
+kate-middleton,CULTURE & ARTS,0.0
+north-carolina,CULTURE & ARTS,0.0
+weight-loss,CULTURE & ARTS,0.0
+kanye-west,CULTURE & ARTS,0.0
+planned-parenthood,CULTURE & ARTS,0.0
+week-photo,CULTURE & ARTS,2.0
+trevor-noah,CULTURE & ARTS,0.0
+marco-rubio,CULTURE & ARTS,0.0
+donald-trump,ENTERTAINMENT,386.0
+u-s,ENTERTAINMENT,33.0
+hillary-clinton,ENTERTAINMENT,49.0
+new-york,ENTERTAINMENT,52.0
+year-old,ENTERTAINMENT,75.0
+white-house,ENTERTAINMENT,30.0
+bernie-sander,ENTERTAINMENT,0.0
+supreme-court,ENTERTAINMENT,0.0
+health-care,ENTERTAINMENT,0.0
+climate-change,ENTERTAINMENT,0.0
+new-year,ENTERTAINMENT,31.0
+super-bowl,ENTERTAINMENT,68.0
+fashion-week,ENTERTAINMENT,0.0
+look-like,ENTERTAINMENT,47.0
+morning-email,ENTERTAINMENT,0.0
+stephen-colbert,ENTERTAINMENT,87.0
+north-korea,ENTERTAINMENT,0.0
+kim-kardashian,ENTERTAINMENT,172.0
+ted-cruz,ENTERTAINMENT,0.0
+need-know,ENTERTAINMENT,0.0
+fox-news,ENTERTAINMENT,0.0
+valentine-day,ENTERTAINMENT,0.0
+taylor-swift,ENTERTAINMENT,244.0
+mother-day,ENTERTAINMENT,0.0
+paul-ryan,ENTERTAINMENT,0.0
+social-medium,ENTERTAINMENT,41.0
+photo-poll,ENTERTAINMENT,0.0
+game-throne,ENTERTAINMENT,203.0
+joe-biden,ENTERTAINMENT,0.0
+michelle-obama,ENTERTAINMENT,0.0
+red-carpet,ENTERTAINMENT,60.0
+jimmy-kimmel,ENTERTAINMENT,70.0
+trump-administration,ENTERTAINMENT,0.0
+high-school,ENTERTAINMENT,0.0
+sexual-assault,ENTERTAINMENT,36.0
+open-letter,ENTERTAINMENT,0.0
+istar-war,ENTERTAINMENT,163.0
+mental-health,ENTERTAINMENT,0.0
+box-office,ENTERTAINMENT,241.0
+jimmy-fallon,ENTERTAINMENT,76.0
+york-city,ENTERTAINMENT,0.0
+trump-say,ENTERTAINMENT,0.0
+kate-middleton,ENTERTAINMENT,0.0
+north-carolina,ENTERTAINMENT,0.0
+weight-loss,ENTERTAINMENT,0.0
+kanye-west,ENTERTAINMENT,138.0
+planned-parenthood,ENTERTAINMENT,0.0
+week-photo,ENTERTAINMENT,0.0
+trevor-noah,ENTERTAINMENT,29.0
+marco-rubio,ENTERTAINMENT,0.0
+donald-trump,BUSINESS,34.0
+u-s,BUSINESS,132.0
+hillary-clinton,BUSINESS,5.0
+new-york,BUSINESS,38.0
+year-old,BUSINESS,8.0
+white-house,BUSINESS,0.0
+bernie-sander,BUSINESS,5.0
+supreme-court,BUSINESS,0.0
+health-care,BUSINESS,16.0
+climate-change,BUSINESS,16.0
+new-year,BUSINESS,9.0
+super-bowl,BUSINESS,13.0
+fashion-week,BUSINESS,0.0
+look-like,BUSINESS,5.0
+morning-email,BUSINESS,0.0
+stephen-colbert,BUSINESS,0.0
+north-korea,BUSINESS,0.0
+kim-kardashian,BUSINESS,0.0
+ted-cruz,BUSINESS,0.0
+need-know,BUSINESS,14.0
+fox-news,BUSINESS,0.0
+valentine-day,BUSINESS,0.0
+taylor-swift,BUSINESS,0.0
+mother-day,BUSINESS,0.0
+paul-ryan,BUSINESS,5.0
+social-medium,BUSINESS,17.0
+photo-poll,BUSINESS,0.0
+game-throne,BUSINESS,0.0
+joe-biden,BUSINESS,0.0
+michelle-obama,BUSINESS,0.0
+red-carpet,BUSINESS,0.0
+jimmy-kimmel,BUSINESS,0.0
+trump-administration,BUSINESS,0.0
+high-school,BUSINESS,0.0
+sexual-assault,BUSINESS,0.0
+open-letter,BUSINESS,0.0
+istar-war,BUSINESS,0.0
+mental-health,BUSINESS,0.0
+box-office,BUSINESS,0.0
+jimmy-fallon,BUSINESS,0.0
+york-city,BUSINESS,14.0
+trump-say,BUSINESS,0.0
+kate-middleton,BUSINESS,0.0
+north-carolina,BUSINESS,6.0
+weight-loss,BUSINESS,0.0
+kanye-west,BUSINESS,0.0
+planned-parenthood,BUSINESS,0.0
+week-photo,BUSINESS,0.0
+trevor-noah,BUSINESS,0.0
+marco-rubio,BUSINESS,0.0
+donald-trump,QUEER VOICES,47.0
+u-s,QUEER VOICES,43.0
+hillary-clinton,QUEER VOICES,13.0
+new-york,QUEER VOICES,52.0
+year-old,QUEER VOICES,23.0
+white-house,QUEER VOICES,11.0
+bernie-sander,QUEER VOICES,0.0
+supreme-court,QUEER VOICES,41.0
+health-care,QUEER VOICES,0.0
+climate-change,QUEER VOICES,0.0
+new-year,QUEER VOICES,9.0
+super-bowl,QUEER VOICES,7.0
+fashion-week,QUEER VOICES,0.0
+look-like,QUEER VOICES,0.0
+morning-email,QUEER VOICES,0.0
+stephen-colbert,QUEER VOICES,0.0
+north-korea,QUEER VOICES,0.0
+kim-kardashian,QUEER VOICES,0.0
+ted-cruz,QUEER VOICES,0.0
+need-know,QUEER VOICES,10.0
+fox-news,QUEER VOICES,0.0
+valentine-day,QUEER VOICES,0.0
+taylor-swift,QUEER VOICES,0.0
+mother-day,QUEER VOICES,16.0
+paul-ryan,QUEER VOICES,0.0
+social-medium,QUEER VOICES,10.0
+photo-poll,QUEER VOICES,0.0
+game-throne,QUEER VOICES,0.0
+joe-biden,QUEER VOICES,0.0
+michelle-obama,QUEER VOICES,0.0
+red-carpet,QUEER VOICES,0.0
+jimmy-kimmel,QUEER VOICES,0.0
+trump-administration,QUEER VOICES,9.0
+high-school,QUEER VOICES,17.0
+sexual-assault,QUEER VOICES,0.0
+open-letter,QUEER VOICES,28.0
+istar-war,QUEER VOICES,0.0
+mental-health,QUEER VOICES,8.0
+box-office,QUEER VOICES,0.0
+jimmy-fallon,QUEER VOICES,0.0
+york-city,QUEER VOICES,11.0
+trump-say,QUEER VOICES,0.0
+kate-middleton,QUEER VOICES,0.0
+north-carolina,QUEER VOICES,36.0
+weight-loss,QUEER VOICES,0.0
+kanye-west,QUEER VOICES,0.0
+planned-parenthood,QUEER VOICES,0.0
+week-photo,QUEER VOICES,0.0
+trevor-noah,QUEER VOICES,0.0
+marco-rubio,QUEER VOICES,0.0
+donald-trump,IMPACT,0.0
+u-s,IMPACT,27.0
+hillary-clinton,IMPACT,0.0
+new-york,IMPACT,10.0
+year-old,IMPACT,8.0
+white-house,IMPACT,7.0
+bernie-sander,IMPACT,0.0
+supreme-court,IMPACT,3.0
+health-care,IMPACT,15.0
+climate-change,IMPACT,17.0
+new-year,IMPACT,9.0
+super-bowl,IMPACT,9.0
+fashion-week,IMPACT,0.0
+look-like,IMPACT,0.0
+morning-email,IMPACT,0.0
+stephen-colbert,IMPACT,0.0
+north-korea,IMPACT,0.0
+kim-kardashian,IMPACT,0.0
+ted-cruz,IMPACT,0.0
+need-know,IMPACT,0.0
+fox-news,IMPACT,0.0
+valentine-day,IMPACT,5.0
+taylor-swift,IMPACT,3.0
+mother-day,IMPACT,9.0
+paul-ryan,IMPACT,0.0
+social-medium,IMPACT,9.0
+photo-poll,IMPACT,0.0
+game-throne,IMPACT,0.0
+joe-biden,IMPACT,0.0
+michelle-obama,IMPACT,0.0
+red-carpet,IMPACT,0.0
+jimmy-kimmel,IMPACT,0.0
+trump-administration,IMPACT,0.0
+high-school,IMPACT,5.0
+sexual-assault,IMPACT,8.0
+open-letter,IMPACT,6.0
+istar-war,IMPACT,0.0
+mental-health,IMPACT,17.0
+box-office,IMPACT,0.0
+jimmy-fallon,IMPACT,0.0
+york-city,IMPACT,5.0
+trump-say,IMPACT,0.0
+kate-middleton,IMPACT,0.0
+north-carolina,IMPACT,0.0
+weight-loss,IMPACT,0.0
+kanye-west,IMPACT,0.0
+planned-parenthood,IMPACT,3.0
+week-photo,IMPACT,0.0
+trevor-noah,IMPACT,0.0
+marco-rubio,IMPACT,0.0
+donald-trump,ENVIRONMENT,0.0
+u-s,ENVIRONMENT,43.0
+hillary-clinton,ENVIRONMENT,0.0
+new-york,ENVIRONMENT,15.0
+year-old,ENVIRONMENT,2.0
+white-house,ENVIRONMENT,0.0
+bernie-sander,ENVIRONMENT,0.0
+supreme-court,ENVIRONMENT,0.0
+health-care,ENVIRONMENT,0.0
+climate-change,ENVIRONMENT,83.0
+new-year,ENVIRONMENT,0.0
+super-bowl,ENVIRONMENT,7.0
+fashion-week,ENVIRONMENT,0.0
+look-like,ENVIRONMENT,3.0
+morning-email,ENVIRONMENT,0.0
+stephen-colbert,ENVIRONMENT,0.0
+north-korea,ENVIRONMENT,0.0
+kim-kardashian,ENVIRONMENT,0.0
+ted-cruz,ENVIRONMENT,0.0
+need-know,ENVIRONMENT,0.0
+fox-news,ENVIRONMENT,0.0
+valentine-day,ENVIRONMENT,0.0
+taylor-swift,ENVIRONMENT,0.0
+mother-day,ENVIRONMENT,6.0
+paul-ryan,ENVIRONMENT,0.0
+social-medium,ENVIRONMENT,0.0
+photo-poll,ENVIRONMENT,0.0
+game-throne,ENVIRONMENT,0.0
+joe-biden,ENVIRONMENT,0.0
+michelle-obama,ENVIRONMENT,0.0
+red-carpet,ENVIRONMENT,0.0
+jimmy-kimmel,ENVIRONMENT,0.0
+trump-administration,ENVIRONMENT,0.0
+high-school,ENVIRONMENT,2.0
+sexual-assault,ENVIRONMENT,0.0
+open-letter,ENVIRONMENT,2.0
+istar-war,ENVIRONMENT,0.0
+mental-health,ENVIRONMENT,0.0
+box-office,ENVIRONMENT,0.0
+jimmy-fallon,ENVIRONMENT,0.0
+york-city,ENVIRONMENT,4.0
+trump-say,ENVIRONMENT,0.0
+kate-middleton,ENVIRONMENT,0.0
+north-carolina,ENVIRONMENT,0.0
+weight-loss,ENVIRONMENT,0.0
+kanye-west,ENVIRONMENT,0.0
+planned-parenthood,ENVIRONMENT,0.0
+week-photo,ENVIRONMENT,10.0
+trevor-noah,ENVIRONMENT,0.0
+marco-rubio,ENVIRONMENT,0.0
+donald-trump,STYLE & BEAUTY,0.0
+u-s,STYLE & BEAUTY,0.0
+hillary-clinton,STYLE & BEAUTY,25.0
+new-york,STYLE & BEAUTY,198.0
+year-old,STYLE & BEAUTY,28.0
+white-house,STYLE & BEAUTY,26.0
+bernie-sander,STYLE & BEAUTY,0.0
+supreme-court,STYLE & BEAUTY,0.0
+health-care,STYLE & BEAUTY,0.0
+climate-change,STYLE & BEAUTY,0.0
+new-year,STYLE & BEAUTY,31.0
+super-bowl,STYLE & BEAUTY,18.0
+fashion-week,STYLE & BEAUTY,365.0
+look-like,STYLE & BEAUTY,59.0
+morning-email,STYLE & BEAUTY,0.0
+stephen-colbert,STYLE & BEAUTY,0.0
+north-korea,STYLE & BEAUTY,0.0
+kim-kardashian,STYLE & BEAUTY,124.0
+ted-cruz,STYLE & BEAUTY,0.0
+need-know,STYLE & BEAUTY,25.0
+fox-news,STYLE & BEAUTY,0.0
+valentine-day,STYLE & BEAUTY,32.0
+taylor-swift,STYLE & BEAUTY,32.0
+mother-day,STYLE & BEAUTY,21.0
+paul-ryan,STYLE & BEAUTY,0.0
+social-medium,STYLE & BEAUTY,0.0
+photo-poll,STYLE & BEAUTY,304.0
+game-throne,STYLE & BEAUTY,0.0
+joe-biden,STYLE & BEAUTY,0.0
+michelle-obama,STYLE & BEAUTY,133.0
+red-carpet,STYLE & BEAUTY,139.0
+jimmy-kimmel,STYLE & BEAUTY,0.0
+trump-administration,STYLE & BEAUTY,0.0
+high-school,STYLE & BEAUTY,0.0
+sexual-assault,STYLE & BEAUTY,0.0
+open-letter,STYLE & BEAUTY,0.0
+istar-war,STYLE & BEAUTY,0.0
+mental-health,STYLE & BEAUTY,0.0
+box-office,STYLE & BEAUTY,0.0
+jimmy-fallon,STYLE & BEAUTY,0.0
+york-city,STYLE & BEAUTY,0.0
+trump-say,STYLE & BEAUTY,0.0
+kate-middleton,STYLE & BEAUTY,191.0
+north-carolina,STYLE & BEAUTY,0.0
+weight-loss,STYLE & BEAUTY,0.0
+kanye-west,STYLE & BEAUTY,35.0
+planned-parenthood,STYLE & BEAUTY,0.0
+week-photo,STYLE & BEAUTY,197.0
+trevor-noah,STYLE & BEAUTY,0.0
+marco-rubio,STYLE & BEAUTY,0.0
+donald-trump,SCIENCE,0.0
+u-s,SCIENCE,14.0
+hillary-clinton,SCIENCE,0.0
+new-york,SCIENCE,0.0
+year-old,SCIENCE,12.0
+white-house,SCIENCE,0.0
+bernie-sander,SCIENCE,0.0
+supreme-court,SCIENCE,0.0
+health-care,SCIENCE,0.0
+climate-change,SCIENCE,22.0
+new-year,SCIENCE,0.0
+super-bowl,SCIENCE,0.0
+fashion-week,SCIENCE,0.0
+look-like,SCIENCE,7.0
+morning-email,SCIENCE,0.0
+stephen-colbert,SCIENCE,0.0
+north-korea,SCIENCE,0.0
+kim-kardashian,SCIENCE,0.0
+ted-cruz,SCIENCE,0.0
+need-know,SCIENCE,0.0
+fox-news,SCIENCE,0.0
+valentine-day,SCIENCE,2.0
+taylor-swift,SCIENCE,0.0
+mother-day,SCIENCE,0.0
+paul-ryan,SCIENCE,0.0
+social-medium,SCIENCE,0.0
+photo-poll,SCIENCE,0.0
+game-throne,SCIENCE,0.0
+joe-biden,SCIENCE,0.0
+michelle-obama,SCIENCE,0.0
+red-carpet,SCIENCE,0.0
+jimmy-kimmel,SCIENCE,0.0
+trump-administration,SCIENCE,0.0
+high-school,SCIENCE,0.0
+sexual-assault,SCIENCE,0.0
+open-letter,SCIENCE,0.0
+istar-war,SCIENCE,0.0
+mental-health,SCIENCE,0.0
+box-office,SCIENCE,0.0
+jimmy-fallon,SCIENCE,0.0
+york-city,SCIENCE,0.0
+trump-say,SCIENCE,0.0
+kate-middleton,SCIENCE,0.0
+north-carolina,SCIENCE,0.0
+weight-loss,SCIENCE,0.0
+kanye-west,SCIENCE,0.0
+planned-parenthood,SCIENCE,0.0
+week-photo,SCIENCE,0.0
+trevor-noah,SCIENCE,0.0
+marco-rubio,SCIENCE,0.0
+donald-trump,COMEDY,588.0
+u-s,COMEDY,18.0
+hillary-clinton,COMEDY,38.0
+new-york,COMEDY,11.0
+year-old,COMEDY,6.0
+white-house,COMEDY,45.0
+bernie-sander,COMEDY,22.0
+supreme-court,COMEDY,0.0
+health-care,COMEDY,11.0
+climate-change,COMEDY,14.0
+new-year,COMEDY,11.0
+super-bowl,COMEDY,26.0
+fashion-week,COMEDY,0.0
+look-like,COMEDY,19.0
+morning-email,COMEDY,0.0
+stephen-colbert,COMEDY,283.0
+north-korea,COMEDY,7.0
+kim-kardashian,COMEDY,0.0
+ted-cruz,COMEDY,18.0
+need-know,COMEDY,0.0
+fox-news,COMEDY,30.0
+valentine-day,COMEDY,13.0
+taylor-swift,COMEDY,0.0
+mother-day,COMEDY,0.0
+paul-ryan,COMEDY,19.0
+social-medium,COMEDY,7.0
+photo-poll,COMEDY,0.0
+game-throne,COMEDY,16.0
+joe-biden,COMEDY,6.0
+michelle-obama,COMEDY,0.0
+red-carpet,COMEDY,0.0
+jimmy-kimmel,COMEDY,143.0
+trump-administration,COMEDY,10.0
+high-school,COMEDY,0.0
+sexual-assault,COMEDY,0.0
+open-letter,COMEDY,6.0
+istar-war,COMEDY,19.0
+mental-health,COMEDY,0.0
+box-office,COMEDY,0.0
+jimmy-fallon,COMEDY,135.0
+york-city,COMEDY,0.0
+trump-say,COMEDY,0.0
+kate-middleton,COMEDY,0.0
+north-carolina,COMEDY,0.0
+weight-loss,COMEDY,0.0
+kanye-west,COMEDY,11.0
+planned-parenthood,COMEDY,0.0
+week-photo,COMEDY,0.0
+trevor-noah,COMEDY,166.0
+marco-rubio,COMEDY,0.0
+donald-trump,PARENTING,0.0
+u-s,PARENTING,30.0
+hillary-clinton,PARENTING,0.0
+new-york,PARENTING,13.0
+year-old,PARENTING,239.0
+white-house,PARENTING,0.0
+bernie-sander,PARENTING,0.0
+supreme-court,PARENTING,0.0
+health-care,PARENTING,0.0
+climate-change,PARENTING,0.0
+new-year,PARENTING,25.0
+super-bowl,PARENTING,9.0
+fashion-week,PARENTING,0.0
+look-like,PARENTING,13.0
+morning-email,PARENTING,0.0
+stephen-colbert,PARENTING,0.0
+north-korea,PARENTING,0.0
+kim-kardashian,PARENTING,0.0
+ted-cruz,PARENTING,0.0
+need-know,PARENTING,23.0
+fox-news,PARENTING,0.0
+valentine-day,PARENTING,19.0
+taylor-swift,PARENTING,0.0
+mother-day,PARENTING,73.0
+paul-ryan,PARENTING,0.0
+social-medium,PARENTING,31.0
+photo-poll,PARENTING,0.0
+game-throne,PARENTING,0.0
+joe-biden,PARENTING,0.0
+michelle-obama,PARENTING,10.0
+red-carpet,PARENTING,0.0
+jimmy-kimmel,PARENTING,10.0
+trump-administration,PARENTING,0.0
+high-school,PARENTING,15.0
+sexual-assault,PARENTING,0.0
+open-letter,PARENTING,36.0
+istar-war,PARENTING,0.0
+mental-health,PARENTING,16.0
+box-office,PARENTING,0.0
+jimmy-fallon,PARENTING,0.0
+york-city,PARENTING,0.0
+trump-say,PARENTING,0.0
+kate-middleton,PARENTING,10.0
+north-carolina,PARENTING,0.0
+weight-loss,PARENTING,0.0
+kanye-west,PARENTING,0.0
+planned-parenthood,PARENTING,0.0
+week-photo,PARENTING,0.0
+trevor-noah,PARENTING,0.0
+marco-rubio,PARENTING,0.0
+donald-trump,WELLNESS,0.0
+u-s,WELLNESS,96.0
+hillary-clinton,WELLNESS,0.0
+new-york,WELLNESS,31.0
+year-old,WELLNESS,30.0
+white-house,WELLNESS,0.0
+bernie-sander,WELLNESS,0.0
+supreme-court,WELLNESS,0.0
+health-care,WELLNESS,94.0
+climate-change,WELLNESS,0.0
+new-year,WELLNESS,136.0
+super-bowl,WELLNESS,27.0
+fashion-week,WELLNESS,0.0
+look-like,WELLNESS,14.0
+morning-email,WELLNESS,0.0
+stephen-colbert,WELLNESS,0.0
+north-korea,WELLNESS,0.0
+kim-kardashian,WELLNESS,0.0
+ted-cruz,WELLNESS,0.0
+need-know,WELLNESS,34.0
+fox-news,WELLNESS,0.0
+valentine-day,WELLNESS,42.0
+taylor-swift,WELLNESS,0.0
+mother-day,WELLNESS,16.0
+paul-ryan,WELLNESS,0.0
+social-medium,WELLNESS,22.0
+photo-poll,WELLNESS,0.0
+game-throne,WELLNESS,0.0
+joe-biden,WELLNESS,0.0
+michelle-obama,WELLNESS,0.0
+red-carpet,WELLNESS,0.0
+jimmy-kimmel,WELLNESS,0.0
+trump-administration,WELLNESS,0.0
+high-school,WELLNESS,0.0
+sexual-assault,WELLNESS,0.0
+open-letter,WELLNESS,0.0
+istar-war,WELLNESS,0.0
+mental-health,WELLNESS,69.0
+box-office,WELLNESS,0.0
+jimmy-fallon,WELLNESS,0.0
+york-city,WELLNESS,15.0
+trump-say,WELLNESS,0.0
+kate-middleton,WELLNESS,0.0
+north-carolina,WELLNESS,0.0
+weight-loss,WELLNESS,182.0
+kanye-west,WELLNESS,0.0
+planned-parenthood,WELLNESS,0.0
+week-photo,WELLNESS,0.0
+trevor-noah,WELLNESS,0.0
+marco-rubio,WELLNESS,0.0
+donald-trump,TRAVEL,0.0
+u-s,TRAVEL,118.0
+hillary-clinton,TRAVEL,0.0
+new-york,TRAVEL,95.0
+year-old,TRAVEL,12.0
+white-house,TRAVEL,0.0
+bernie-sander,TRAVEL,0.0
+supreme-court,TRAVEL,0.0
+health-care,TRAVEL,0.0
+climate-change,TRAVEL,0.0
+new-year,TRAVEL,35.0
+super-bowl,TRAVEL,17.0
+fashion-week,TRAVEL,0.0
+look-like,TRAVEL,16.0
+morning-email,TRAVEL,0.0
+stephen-colbert,TRAVEL,0.0
+north-korea,TRAVEL,10.0
+kim-kardashian,TRAVEL,0.0
+ted-cruz,TRAVEL,0.0
+need-know,TRAVEL,15.0
+fox-news,TRAVEL,0.0
+valentine-day,TRAVEL,20.0
+taylor-swift,TRAVEL,0.0
+mother-day,TRAVEL,0.0
+paul-ryan,TRAVEL,0.0
+social-medium,TRAVEL,0.0
+photo-poll,TRAVEL,0.0
+game-throne,TRAVEL,0.0
+joe-biden,TRAVEL,0.0
+michelle-obama,TRAVEL,0.0
+red-carpet,TRAVEL,0.0
+jimmy-kimmel,TRAVEL,0.0
+trump-administration,TRAVEL,0.0
+high-school,TRAVEL,0.0
+sexual-assault,TRAVEL,0.0
+open-letter,TRAVEL,0.0
+istar-war,TRAVEL,0.0
+mental-health,TRAVEL,0.0
+box-office,TRAVEL,0.0
+jimmy-fallon,TRAVEL,0.0
+york-city,TRAVEL,36.0
+trump-say,TRAVEL,0.0
+kate-middleton,TRAVEL,0.0
+north-carolina,TRAVEL,0.0
+weight-loss,TRAVEL,0.0
+kanye-west,TRAVEL,0.0
+planned-parenthood,TRAVEL,0.0
+week-photo,TRAVEL,0.0
+trevor-noah,TRAVEL,0.0
+marco-rubio,TRAVEL,0.0
+donald-trump,HOME & LIVING,0.0
+u-s,HOME & LIVING,0.0
+hillary-clinton,HOME & LIVING,0.0
+new-york,HOME & LIVING,42.0
+year-old,HOME & LIVING,0.0
+white-house,HOME & LIVING,0.0
+bernie-sander,HOME & LIVING,0.0
+supreme-court,HOME & LIVING,0.0
+health-care,HOME & LIVING,0.0
+climate-change,HOME & LIVING,0.0
+new-year,HOME & LIVING,24.0
+super-bowl,HOME & LIVING,7.0
+fashion-week,HOME & LIVING,0.0
+look-like,HOME & LIVING,18.0
+morning-email,HOME & LIVING,0.0
+stephen-colbert,HOME & LIVING,0.0
+north-korea,HOME & LIVING,0.0
+kim-kardashian,HOME & LIVING,0.0
+ted-cruz,HOME & LIVING,0.0
+need-know,HOME & LIVING,7.0
+fox-news,HOME & LIVING,0.0
+valentine-day,HOME & LIVING,45.0
+taylor-swift,HOME & LIVING,0.0
+mother-day,HOME & LIVING,21.0
+paul-ryan,HOME & LIVING,0.0
+social-medium,HOME & LIVING,0.0
+photo-poll,HOME & LIVING,0.0
+game-throne,HOME & LIVING,0.0
+joe-biden,HOME & LIVING,0.0
+michelle-obama,HOME & LIVING,0.0
+red-carpet,HOME & LIVING,0.0
+jimmy-kimmel,HOME & LIVING,0.0
+trump-administration,HOME & LIVING,0.0
+high-school,HOME & LIVING,0.0
+sexual-assault,HOME & LIVING,0.0
+open-letter,HOME & LIVING,0.0
+istar-war,HOME & LIVING,0.0
+mental-health,HOME & LIVING,0.0
+box-office,HOME & LIVING,0.0
+jimmy-fallon,HOME & LIVING,0.0
+york-city,HOME & LIVING,17.0
+trump-say,HOME & LIVING,0.0
+kate-middleton,HOME & LIVING,9.0
+north-carolina,HOME & LIVING,0.0
+weight-loss,HOME & LIVING,0.0
+kanye-west,HOME & LIVING,0.0
+planned-parenthood,HOME & LIVING,0.0
+week-photo,HOME & LIVING,15.0
+trevor-noah,HOME & LIVING,0.0
+marco-rubio,HOME & LIVING,0.0
+donald-trump,BLACK VOICES,26.0
+u-s,BLACK VOICES,28.0
+hillary-clinton,BLACK VOICES,12.0
+new-york,BLACK VOICES,24.0
+year-old,BLACK VOICES,47.0
+white-house,BLACK VOICES,12.0
+bernie-sander,BLACK VOICES,0.0
+supreme-court,BLACK VOICES,0.0
+health-care,BLACK VOICES,0.0
+climate-change,BLACK VOICES,0.0
+new-year,BLACK VOICES,0.0
+super-bowl,BLACK VOICES,7.0
+fashion-week,BLACK VOICES,0.0
+look-like,BLACK VOICES,0.0
+morning-email,BLACK VOICES,0.0
+stephen-colbert,BLACK VOICES,0.0
+north-korea,BLACK VOICES,0.0
+kim-kardashian,BLACK VOICES,0.0
+ted-cruz,BLACK VOICES,0.0
+need-know,BLACK VOICES,0.0
+fox-news,BLACK VOICES,0.0
+valentine-day,BLACK VOICES,0.0
+taylor-swift,BLACK VOICES,0.0
+mother-day,BLACK VOICES,12.0
+paul-ryan,BLACK VOICES,0.0
+social-medium,BLACK VOICES,0.0
+photo-poll,BLACK VOICES,0.0
+game-throne,BLACK VOICES,0.0
+joe-biden,BLACK VOICES,0.0
+michelle-obama,BLACK VOICES,19.0
+red-carpet,BLACK VOICES,7.0
+jimmy-kimmel,BLACK VOICES,0.0
+trump-administration,BLACK VOICES,0.0
+high-school,BLACK VOICES,19.0
+sexual-assault,BLACK VOICES,0.0
+open-letter,BLACK VOICES,14.0
+istar-war,BLACK VOICES,0.0
+mental-health,BLACK VOICES,0.0
+box-office,BLACK VOICES,0.0
+jimmy-fallon,BLACK VOICES,0.0
+york-city,BLACK VOICES,8.0
+trump-say,BLACK VOICES,0.0
+kate-middleton,BLACK VOICES,0.0
+north-carolina,BLACK VOICES,0.0
+weight-loss,BLACK VOICES,0.0
+kanye-west,BLACK VOICES,11.0
+planned-parenthood,BLACK VOICES,0.0
+week-photo,BLACK VOICES,0.0
+trevor-noah,BLACK VOICES,0.0
+marco-rubio,BLACK VOICES,0.0
+donald-trump,WEDDINGS,0.0
+u-s,WEDDINGS,6.0
+hillary-clinton,WEDDINGS,0.0
+new-york,WEDDINGS,8.0
+year-old,WEDDINGS,8.0
+white-house,WEDDINGS,0.0
+bernie-sander,WEDDINGS,0.0
+supreme-court,WEDDINGS,0.0
+health-care,WEDDINGS,0.0
+climate-change,WEDDINGS,0.0
+new-year,WEDDINGS,6.0
+super-bowl,WEDDINGS,7.0
+fashion-week,WEDDINGS,0.0
+look-like,WEDDINGS,0.0
+morning-email,WEDDINGS,0.0
+stephen-colbert,WEDDINGS,0.0
+north-korea,WEDDINGS,0.0
+kim-kardashian,WEDDINGS,0.0
+ted-cruz,WEDDINGS,0.0
+need-know,WEDDINGS,12.0
+fox-news,WEDDINGS,0.0
+valentine-day,WEDDINGS,26.0
+taylor-swift,WEDDINGS,0.0
+mother-day,WEDDINGS,0.0
+paul-ryan,WEDDINGS,0.0
+social-medium,WEDDINGS,16.0
+photo-poll,WEDDINGS,0.0
+game-throne,WEDDINGS,0.0
+joe-biden,WEDDINGS,0.0
+michelle-obama,WEDDINGS,0.0
+red-carpet,WEDDINGS,0.0
+jimmy-kimmel,WEDDINGS,0.0
+trump-administration,WEDDINGS,0.0
+high-school,WEDDINGS,9.0
+sexual-assault,WEDDINGS,0.0
+open-letter,WEDDINGS,0.0
+istar-war,WEDDINGS,6.0
+mental-health,WEDDINGS,0.0
+box-office,WEDDINGS,0.0
+jimmy-fallon,WEDDINGS,0.0
+york-city,WEDDINGS,0.0
+trump-say,WEDDINGS,0.0
+kate-middleton,WEDDINGS,0.0
+north-carolina,WEDDINGS,0.0
+weight-loss,WEDDINGS,0.0
+kanye-west,WEDDINGS,0.0
+planned-parenthood,WEDDINGS,0.0
+week-photo,WEDDINGS,0.0
+trevor-noah,WEDDINGS,0.0
+marco-rubio,WEDDINGS,0.0
+donald-trump,DIVORCE,0.0
+u-s,DIVORCE,0.0
+hillary-clinton,DIVORCE,0.0
+new-york,DIVORCE,0.0
+year-old,DIVORCE,5.0
+white-house,DIVORCE,0.0
+bernie-sander,DIVORCE,0.0
+supreme-court,DIVORCE,0.0
+health-care,DIVORCE,0.0
+climate-change,DIVORCE,0.0
+new-year,DIVORCE,12.0
+super-bowl,DIVORCE,0.0
+fashion-week,DIVORCE,0.0
+look-like,DIVORCE,0.0
+morning-email,DIVORCE,0.0
+stephen-colbert,DIVORCE,0.0
+north-korea,DIVORCE,0.0
+kim-kardashian,DIVORCE,22.0
+ted-cruz,DIVORCE,0.0
+need-know,DIVORCE,13.0
+fox-news,DIVORCE,0.0
+valentine-day,DIVORCE,17.0
+taylor-swift,DIVORCE,0.0
+mother-day,DIVORCE,17.0
+paul-ryan,DIVORCE,0.0
+social-medium,DIVORCE,12.0
+photo-poll,DIVORCE,0.0
+game-throne,DIVORCE,0.0
+joe-biden,DIVORCE,0.0
+michelle-obama,DIVORCE,0.0
+red-carpet,DIVORCE,0.0
+jimmy-kimmel,DIVORCE,0.0
+trump-administration,DIVORCE,0.0
+high-school,DIVORCE,0.0
+sexual-assault,DIVORCE,0.0
+open-letter,DIVORCE,6.0
+istar-war,DIVORCE,0.0
+mental-health,DIVORCE,0.0
+box-office,DIVORCE,0.0
+jimmy-fallon,DIVORCE,0.0
+york-city,DIVORCE,0.0
+trump-say,DIVORCE,0.0
+kate-middleton,DIVORCE,0.0
+north-carolina,DIVORCE,0.0
+weight-loss,DIVORCE,0.0
+kanye-west,DIVORCE,0.0
+planned-parenthood,DIVORCE,0.0
+week-photo,DIVORCE,0.0
+trevor-noah,DIVORCE,0.0
+marco-rubio,DIVORCE,0.0
+donald-trump,FOOD & DRINK,0.0
+u-s,FOOD & DRINK,28.0
+hillary-clinton,FOOD & DRINK,0.0
+new-york,FOOD & DRINK,27.0
+year-old,FOOD & DRINK,0.0
+white-house,FOOD & DRINK,0.0
+bernie-sander,FOOD & DRINK,0.0
+supreme-court,FOOD & DRINK,0.0
+health-care,FOOD & DRINK,0.0
+climate-change,FOOD & DRINK,0.0
+new-year,FOOD & DRINK,26.0
+super-bowl,FOOD & DRINK,38.0
+fashion-week,FOOD & DRINK,0.0
+look-like,FOOD & DRINK,14.0
+morning-email,FOOD & DRINK,0.0
+stephen-colbert,FOOD & DRINK,0.0
+north-korea,FOOD & DRINK,0.0
+kim-kardashian,FOOD & DRINK,0.0
+ted-cruz,FOOD & DRINK,0.0
+need-know,FOOD & DRINK,17.0
+fox-news,FOOD & DRINK,0.0
+valentine-day,FOOD & DRINK,39.0
+taylor-swift,FOOD & DRINK,0.0
+mother-day,FOOD & DRINK,0.0
+paul-ryan,FOOD & DRINK,0.0
+social-medium,FOOD & DRINK,0.0
+photo-poll,FOOD & DRINK,0.0
+game-throne,FOOD & DRINK,0.0
+joe-biden,FOOD & DRINK,0.0
+michelle-obama,FOOD & DRINK,0.0
+red-carpet,FOOD & DRINK,0.0
+jimmy-kimmel,FOOD & DRINK,0.0
+trump-administration,FOOD & DRINK,0.0
+high-school,FOOD & DRINK,0.0
+sexual-assault,FOOD & DRINK,0.0
+open-letter,FOOD & DRINK,0.0
+istar-war,FOOD & DRINK,0.0
+mental-health,FOOD & DRINK,0.0
+box-office,FOOD & DRINK,0.0
+jimmy-fallon,FOOD & DRINK,0.0
+york-city,FOOD & DRINK,9.0
+trump-say,FOOD & DRINK,0.0
+kate-middleton,FOOD & DRINK,0.0
+north-carolina,FOOD & DRINK,0.0
+weight-loss,FOOD & DRINK,0.0
+kanye-west,FOOD & DRINK,0.0
+planned-parenthood,FOOD & DRINK,0.0
+week-photo,FOOD & DRINK,0.0
+trevor-noah,FOOD & DRINK,0.0
+marco-rubio,FOOD & DRINK,0.0
+donald-trump,CRIME,0.0
+u-s,CRIME,35.0
+hillary-clinton,CRIME,0.0
+new-york,CRIME,37.0
+year-old,CRIME,120.0
+white-house,CRIME,0.0
+bernie-sander,CRIME,0.0
+supreme-court,CRIME,0.0
+health-care,CRIME,0.0
+climate-change,CRIME,0.0
+new-year,CRIME,9.0
+super-bowl,CRIME,0.0
+fashion-week,CRIME,0.0
+look-like,CRIME,0.0
+morning-email,CRIME,0.0
+stephen-colbert,CRIME,0.0
+north-korea,CRIME,0.0
+kim-kardashian,CRIME,0.0
+ted-cruz,CRIME,0.0
+need-know,CRIME,0.0
+fox-news,CRIME,0.0
+valentine-day,CRIME,0.0
+taylor-swift,CRIME,0.0
+mother-day,CRIME,0.0
+paul-ryan,CRIME,0.0
+social-medium,CRIME,0.0
+photo-poll,CRIME,0.0
+game-throne,CRIME,0.0
+joe-biden,CRIME,0.0
+michelle-obama,CRIME,0.0
+red-carpet,CRIME,0.0
+jimmy-kimmel,CRIME,0.0
+trump-administration,CRIME,0.0
+high-school,CRIME,26.0
+sexual-assault,CRIME,15.0
+open-letter,CRIME,0.0
+istar-war,CRIME,0.0
+mental-health,CRIME,0.0
+box-office,CRIME,0.0
+jimmy-fallon,CRIME,0.0
+york-city,CRIME,11.0
+trump-say,CRIME,0.0
+kate-middleton,CRIME,0.0
+north-carolina,CRIME,9.0
+weight-loss,CRIME,0.0
+kanye-west,CRIME,0.0
+planned-parenthood,CRIME,9.0
+week-photo,CRIME,0.0
+trevor-noah,CRIME,0.0
+marco-rubio,CRIME,0.0
+donald-trump,MONEY,0.0
+u-s,MONEY,14.0
+hillary-clinton,MONEY,0.0
+new-york,MONEY,7.0
+year-old,MONEY,6.0
+white-house,MONEY,0.0
+bernie-sander,MONEY,0.0
+supreme-court,MONEY,0.0
+health-care,MONEY,19.0
+climate-change,MONEY,0.0
+new-year,MONEY,9.0
+super-bowl,MONEY,0.0
+fashion-week,MONEY,0.0
+look-like,MONEY,0.0
+morning-email,MONEY,0.0
+stephen-colbert,MONEY,0.0
+north-korea,MONEY,0.0
+kim-kardashian,MONEY,0.0
+ted-cruz,MONEY,0.0
+need-know,MONEY,9.0
+fox-news,MONEY,0.0
+valentine-day,MONEY,0.0
+taylor-swift,MONEY,0.0
+mother-day,MONEY,3.0
+paul-ryan,MONEY,0.0
+social-medium,MONEY,0.0
+photo-poll,MONEY,0.0
+game-throne,MONEY,0.0
+joe-biden,MONEY,0.0
+michelle-obama,MONEY,0.0
+red-carpet,MONEY,0.0
+jimmy-kimmel,MONEY,0.0
+trump-administration,MONEY,0.0
+high-school,MONEY,0.0
+sexual-assault,MONEY,0.0
+open-letter,MONEY,0.0
+istar-war,MONEY,0.0
+mental-health,MONEY,0.0
+box-office,MONEY,0.0
+jimmy-fallon,MONEY,0.0
+york-city,MONEY,0.0
+trump-say,MONEY,0.0
+kate-middleton,MONEY,0.0
+north-carolina,MONEY,0.0
+weight-loss,MONEY,0.0
+kanye-west,MONEY,0.0
+planned-parenthood,MONEY,0.0
+week-photo,MONEY,0.0
+trevor-noah,MONEY,0.0
+marco-rubio,MONEY,0.0
+donald-trump,GREEN,8.0
+u-s,GREEN,48.0
+hillary-clinton,GREEN,3.0
+new-york,GREEN,13.0
+year-old,GREEN,6.0
+white-house,GREEN,0.0
+bernie-sander,GREEN,0.0
+supreme-court,GREEN,0.0
+health-care,GREEN,0.0
+climate-change,GREEN,146.0
+new-year,GREEN,0.0
+super-bowl,GREEN,0.0
+fashion-week,GREEN,0.0
+look-like,GREEN,0.0
+morning-email,GREEN,0.0
+stephen-colbert,GREEN,0.0
+north-korea,GREEN,0.0
+kim-kardashian,GREEN,0.0
+ted-cruz,GREEN,0.0
+need-know,GREEN,0.0
+fox-news,GREEN,0.0
+valentine-day,GREEN,0.0
+taylor-swift,GREEN,0.0
+mother-day,GREEN,0.0
+paul-ryan,GREEN,0.0
+social-medium,GREEN,0.0
+photo-poll,GREEN,0.0
+game-throne,GREEN,0.0
+joe-biden,GREEN,0.0
+michelle-obama,GREEN,0.0
+red-carpet,GREEN,0.0
+jimmy-kimmel,GREEN,0.0
+trump-administration,GREEN,7.0
+high-school,GREEN,0.0
+sexual-assault,GREEN,0.0
+open-letter,GREEN,5.0
+istar-war,GREEN,0.0
+mental-health,GREEN,0.0
+box-office,GREEN,0.0
+jimmy-fallon,GREEN,0.0
+york-city,GREEN,3.0
+trump-say,GREEN,0.0
+kate-middleton,GREEN,0.0
+north-carolina,GREEN,0.0
+weight-loss,GREEN,0.0
+kanye-west,GREEN,0.0
+planned-parenthood,GREEN,0.0
+week-photo,GREEN,0.0
+trevor-noah,GREEN,0.0
+marco-rubio,GREEN,0.0
+donald-trump,TASTE,0.0
+u-s,TASTE,13.0
+hillary-clinton,TASTE,3.0
+new-york,TASTE,9.0
+year-old,TASTE,0.0
+white-house,TASTE,0.0
+bernie-sander,TASTE,0.0
+supreme-court,TASTE,0.0
+health-care,TASTE,0.0
+climate-change,TASTE,0.0
+new-year,TASTE,7.0
+super-bowl,TASTE,10.0
+fashion-week,TASTE,0.0
+look-like,TASTE,6.0
+morning-email,TASTE,0.0
+stephen-colbert,TASTE,0.0
+north-korea,TASTE,0.0
+kim-kardashian,TASTE,0.0
+ted-cruz,TASTE,0.0
+need-know,TASTE,5.0
+fox-news,TASTE,0.0
+valentine-day,TASTE,5.0
+taylor-swift,TASTE,0.0
+mother-day,TASTE,3.0
+paul-ryan,TASTE,0.0
+social-medium,TASTE,0.0
+photo-poll,TASTE,0.0
+game-throne,TASTE,0.0
+joe-biden,TASTE,0.0
+michelle-obama,TASTE,0.0
+red-carpet,TASTE,0.0
+jimmy-kimmel,TASTE,0.0
+trump-administration,TASTE,0.0
+high-school,TASTE,0.0
+sexual-assault,TASTE,0.0
+open-letter,TASTE,0.0
+istar-war,TASTE,0.0
+mental-health,TASTE,0.0
+box-office,TASTE,0.0
+jimmy-fallon,TASTE,0.0
+york-city,TASTE,4.0
+trump-say,TASTE,0.0
+kate-middleton,TASTE,0.0
+north-carolina,TASTE,0.0
+weight-loss,TASTE,0.0
+kanye-west,TASTE,0.0
+planned-parenthood,TASTE,0.0
+week-photo,TASTE,0.0
+trevor-noah,TASTE,0.0
+marco-rubio,TASTE,0.0
+donald-trump,WOMEN,34.0
+u-s,WOMEN,15.0
+hillary-clinton,WOMEN,43.0
+new-york,WOMEN,9.0
+year-old,WOMEN,15.0
+white-house,WOMEN,4.0
+bernie-sander,WOMEN,6.0
+supreme-court,WOMEN,0.0
+health-care,WOMEN,5.0
+climate-change,WOMEN,0.0
+new-year,WOMEN,0.0
+super-bowl,WOMEN,0.0
+fashion-week,WOMEN,0.0
+look-like,WOMEN,10.0
+morning-email,WOMEN,0.0
+stephen-colbert,WOMEN,0.0
+north-korea,WOMEN,0.0
+kim-kardashian,WOMEN,0.0
+ted-cruz,WOMEN,0.0
+need-know,WOMEN,6.0
+fox-news,WOMEN,0.0
+valentine-day,WOMEN,10.0
+taylor-swift,WOMEN,4.0
+mother-day,WOMEN,15.0
+paul-ryan,WOMEN,0.0
+social-medium,WOMEN,0.0
+photo-poll,WOMEN,0.0
+game-throne,WOMEN,0.0
+joe-biden,WOMEN,7.0
+michelle-obama,WOMEN,5.0
+red-carpet,WOMEN,7.0
+jimmy-kimmel,WOMEN,0.0
+trump-administration,WOMEN,0.0
+high-school,WOMEN,8.0
+sexual-assault,WOMEN,69.0
+open-letter,WOMEN,14.0
+istar-war,WOMEN,0.0
+mental-health,WOMEN,0.0
+box-office,WOMEN,0.0
+jimmy-fallon,WOMEN,0.0
+york-city,WOMEN,0.0
+trump-say,WOMEN,0.0
+kate-middleton,WOMEN,0.0
+north-carolina,WOMEN,0.0
+weight-loss,WOMEN,0.0
+kanye-west,WOMEN,0.0
+planned-parenthood,WOMEN,34.0
+week-photo,WOMEN,0.0
+trevor-noah,WOMEN,0.0
+marco-rubio,WOMEN,0.0
+donald-trump,POLITICS,3005.0
+u-s,POLITICS,904.0
+hillary-clinton,POLITICS,1053.0
+new-york,POLITICS,206.0
+year-old,POLITICS,58.0
+white-house,POLITICS,624.0
+bernie-sander,POLITICS,629.0
+supreme-court,POLITICS,560.0
+health-care,POLITICS,396.0
+climate-change,POLITICS,213.0
+new-year,POLITICS,0.0
+super-bowl,POLITICS,0.0
+fashion-week,POLITICS,0.0
+look-like,POLITICS,55.0
+morning-email,POLITICS,408.0
+stephen-colbert,POLITICS,0.0
+north-korea,POLITICS,89.0
+kim-kardashian,POLITICS,0.0
+ted-cruz,POLITICS,313.0
+need-know,POLITICS,55.0
+fox-news,POLITICS,119.0
+valentine-day,POLITICS,0.0
+taylor-swift,POLITICS,0.0
+mother-day,POLITICS,0.0
+paul-ryan,POLITICS,268.0
+social-medium,POLITICS,0.0
+photo-poll,POLITICS,0.0
+game-throne,POLITICS,0.0
+joe-biden,POLITICS,224.0
+michelle-obama,POLITICS,50.0
+red-carpet,POLITICS,0.0
+jimmy-kimmel,POLITICS,0.0
+trump-administration,POLITICS,203.0
+high-school,POLITICS,0.0
+sexual-assault,POLITICS,58.0
+open-letter,POLITICS,46.0
+istar-war,POLITICS,0.0
+mental-health,POLITICS,0.0
+box-office,POLITICS,0.0
+jimmy-fallon,POLITICS,0.0
+york-city,POLITICS,0.0
+trump-say,POLITICS,189.0
+kate-middleton,POLITICS,0.0
+north-carolina,POLITICS,123.0
+weight-loss,POLITICS,0.0
+kanye-west,POLITICS,0.0
+planned-parenthood,POLITICS,154.0
+week-photo,POLITICS,0.0
+trevor-noah,POLITICS,0.0
+marco-rubio,POLITICS,204.0
+donald-trump,ARTS,0.0
+u-s,ARTS,0.0
+hillary-clinton,ARTS,0.0
+new-york,ARTS,13.0
+year-old,ARTS,0.0
+white-house,ARTS,0.0
+bernie-sander,ARTS,0.0
+supreme-court,ARTS,0.0
+health-care,ARTS,0.0
+climate-change,ARTS,0.0
+new-year,ARTS,0.0
+super-bowl,ARTS,0.0
+fashion-week,ARTS,0.0
+look-like,ARTS,0.0
+morning-email,ARTS,0.0
+stephen-colbert,ARTS,0.0
+north-korea,ARTS,0.0
+kim-kardashian,ARTS,0.0
+ted-cruz,ARTS,0.0
+need-know,ARTS,0.0
+fox-news,ARTS,0.0
+valentine-day,ARTS,0.0
+taylor-swift,ARTS,0.0
+mother-day,ARTS,0.0
+paul-ryan,ARTS,0.0
+social-medium,ARTS,0.0
+photo-poll,ARTS,0.0
+game-throne,ARTS,0.0
+joe-biden,ARTS,0.0
+michelle-obama,ARTS,0.0
+red-carpet,ARTS,0.0
+jimmy-kimmel,ARTS,0.0
+trump-administration,ARTS,0.0
+high-school,ARTS,0.0
+sexual-assault,ARTS,0.0
+open-letter,ARTS,0.0
+istar-war,ARTS,0.0
+mental-health,ARTS,0.0
+box-office,ARTS,0.0
+jimmy-fallon,ARTS,0.0
+york-city,ARTS,3.0
+trump-say,ARTS,0.0
+kate-middleton,ARTS,0.0
+north-carolina,ARTS,0.0
+weight-loss,ARTS,0.0
+kanye-west,ARTS,0.0
+planned-parenthood,ARTS,0.0
+week-photo,ARTS,0.0
+trevor-noah,ARTS,0.0
+marco-rubio,ARTS,0.0
+donald-trump,PARENTS,7.0
+u-s,PARENTS,0.0
+hillary-clinton,PARENTS,9.0
+new-york,PARENTS,6.0
+year-old,PARENTS,80.0
+white-house,PARENTS,0.0
+bernie-sander,PARENTS,0.0
+supreme-court,PARENTS,0.0
+health-care,PARENTS,0.0
+climate-change,PARENTS,0.0
+new-year,PARENTS,13.0
+super-bowl,PARENTS,0.0
+fashion-week,PARENTS,0.0
+look-like,PARENTS,12.0
+morning-email,PARENTS,0.0
+stephen-colbert,PARENTS,0.0
+north-korea,PARENTS,0.0
+kim-kardashian,PARENTS,0.0
+ted-cruz,PARENTS,0.0
+need-know,PARENTS,13.0
+fox-news,PARENTS,0.0
+valentine-day,PARENTS,7.0
+taylor-swift,PARENTS,0.0
+mother-day,PARENTS,48.0
+paul-ryan,PARENTS,0.0
+social-medium,PARENTS,10.0
+photo-poll,PARENTS,0.0
+game-throne,PARENTS,0.0
+joe-biden,PARENTS,0.0
+michelle-obama,PARENTS,0.0
+red-carpet,PARENTS,0.0
+jimmy-kimmel,PARENTS,13.0
+trump-administration,PARENTS,0.0
+high-school,PARENTS,6.0
+sexual-assault,PARENTS,0.0
+open-letter,PARENTS,18.0
+istar-war,PARENTS,16.0
+mental-health,PARENTS,5.0
+box-office,PARENTS,0.0
+jimmy-fallon,PARENTS,0.0
+york-city,PARENTS,0.0
+trump-say,PARENTS,0.0
+kate-middleton,PARENTS,0.0
+north-carolina,PARENTS,0.0
+weight-loss,PARENTS,0.0
+kanye-west,PARENTS,0.0
+planned-parenthood,PARENTS,0.0
+week-photo,PARENTS,0.0
+trevor-noah,PARENTS,0.0
+marco-rubio,PARENTS,0.0
+donald-trump,HEALTHY LIVING,6.0
+u-s,HEALTHY LIVING,90.0
+hillary-clinton,HEALTHY LIVING,0.0
+new-york,HEALTHY LIVING,14.0
+year-old,HEALTHY LIVING,11.0
+white-house,HEALTHY LIVING,0.0
+bernie-sander,HEALTHY LIVING,0.0
+supreme-court,HEALTHY LIVING,0.0
+health-care,HEALTHY LIVING,51.0
+climate-change,HEALTHY LIVING,0.0
+new-year,HEALTHY LIVING,30.0
+super-bowl,HEALTHY LIVING,0.0
+fashion-week,HEALTHY LIVING,0.0
+look-like,HEALTHY LIVING,11.0
+morning-email,HEALTHY LIVING,0.0
+stephen-colbert,HEALTHY LIVING,0.0
+north-korea,HEALTHY LIVING,0.0
+kim-kardashian,HEALTHY LIVING,0.0
+ted-cruz,HEALTHY LIVING,0.0
+need-know,HEALTHY LIVING,27.0
+fox-news,HEALTHY LIVING,0.0
+valentine-day,HEALTHY LIVING,4.0
+taylor-swift,HEALTHY LIVING,0.0
+mother-day,HEALTHY LIVING,8.0
+paul-ryan,HEALTHY LIVING,0.0
+social-medium,HEALTHY LIVING,11.0
+photo-poll,HEALTHY LIVING,0.0
+game-throne,HEALTHY LIVING,0.0
+joe-biden,HEALTHY LIVING,0.0
+michelle-obama,HEALTHY LIVING,4.0
+red-carpet,HEALTHY LIVING,0.0
+jimmy-kimmel,HEALTHY LIVING,0.0
+trump-administration,HEALTHY LIVING,0.0
+high-school,HEALTHY LIVING,0.0
+sexual-assault,HEALTHY LIVING,0.0
+open-letter,HEALTHY LIVING,4.0
+istar-war,HEALTHY LIVING,0.0
+mental-health,HEALTHY LIVING,70.0
+box-office,HEALTHY LIVING,0.0
+jimmy-fallon,HEALTHY LIVING,0.0
+york-city,HEALTHY LIVING,0.0
+trump-say,HEALTHY LIVING,0.0
+kate-middleton,HEALTHY LIVING,0.0
+north-carolina,HEALTHY LIVING,0.0
+weight-loss,HEALTHY LIVING,23.0
+kanye-west,HEALTHY LIVING,0.0
+planned-parenthood,HEALTHY LIVING,0.0
+week-photo,HEALTHY LIVING,0.0
+trevor-noah,HEALTHY LIVING,0.0
+marco-rubio,HEALTHY LIVING,0.0
+donald-trump,WORLDPOST,2.0
+u-s,WORLDPOST,53.0
+hillary-clinton,WORLDPOST,0.0
+new-york,WORLDPOST,0.0
+year-old,WORLDPOST,0.0
+white-house,WORLDPOST,2.0
+bernie-sander,WORLDPOST,0.0
+supreme-court,WORLDPOST,0.0
+health-care,WORLDPOST,0.0
+climate-change,WORLDPOST,6.0
+new-year,WORLDPOST,5.0
+super-bowl,WORLDPOST,0.0
+fashion-week,WORLDPOST,0.0
+look-like,WORLDPOST,4.0
+morning-email,WORLDPOST,0.0
+stephen-colbert,WORLDPOST,0.0
+north-korea,WORLDPOST,8.0
+kim-kardashian,WORLDPOST,0.0
+ted-cruz,WORLDPOST,0.0
+need-know,WORLDPOST,0.0
+fox-news,WORLDPOST,0.0
+valentine-day,WORLDPOST,0.0
+taylor-swift,WORLDPOST,0.0
+mother-day,WORLDPOST,0.0
+paul-ryan,WORLDPOST,0.0
+social-medium,WORLDPOST,0.0
+photo-poll,WORLDPOST,0.0
+game-throne,WORLDPOST,0.0
+joe-biden,WORLDPOST,0.0
+michelle-obama,WORLDPOST,0.0
+red-carpet,WORLDPOST,0.0
+jimmy-kimmel,WORLDPOST,0.0
+trump-administration,WORLDPOST,0.0
+high-school,WORLDPOST,0.0
+sexual-assault,WORLDPOST,0.0
+open-letter,WORLDPOST,2.0
+istar-war,WORLDPOST,0.0
+mental-health,WORLDPOST,0.0
+box-office,WORLDPOST,0.0
+jimmy-fallon,WORLDPOST,0.0
+york-city,WORLDPOST,0.0
+trump-say,WORLDPOST,0.0
+kate-middleton,WORLDPOST,0.0
+north-carolina,WORLDPOST,0.0
+weight-loss,WORLDPOST,0.0
+kanye-west,WORLDPOST,0.0
+planned-parenthood,WORLDPOST,0.0
+week-photo,WORLDPOST,0.0
+trevor-noah,WORLDPOST,0.0
+marco-rubio,WORLDPOST,0.0
+donald-trump,EDUCATION,3.0
+u-s,EDUCATION,6.0
+hillary-clinton,EDUCATION,0.0
+new-york,EDUCATION,8.0
+year-old,EDUCATION,4.0
+white-house,EDUCATION,3.0
+bernie-sander,EDUCATION,0.0
+supreme-court,EDUCATION,0.0
+health-care,EDUCATION,0.0
+climate-change,EDUCATION,0.0
+new-year,EDUCATION,0.0
+super-bowl,EDUCATION,0.0
+fashion-week,EDUCATION,0.0
+look-like,EDUCATION,4.0
+morning-email,EDUCATION,0.0
+stephen-colbert,EDUCATION,0.0
+north-korea,EDUCATION,0.0
+kim-kardashian,EDUCATION,0.0
+ted-cruz,EDUCATION,0.0
+need-know,EDUCATION,3.0
+fox-news,EDUCATION,0.0
+valentine-day,EDUCATION,0.0
+taylor-swift,EDUCATION,0.0
+mother-day,EDUCATION,2.0
+paul-ryan,EDUCATION,0.0
+social-medium,EDUCATION,0.0
+photo-poll,EDUCATION,0.0
+game-throne,EDUCATION,0.0
+joe-biden,EDUCATION,0.0
+michelle-obama,EDUCATION,0.0
+red-carpet,EDUCATION,0.0
+jimmy-kimmel,EDUCATION,0.0
+trump-administration,EDUCATION,2.0
+high-school,EDUCATION,21.0
+sexual-assault,EDUCATION,4.0
+open-letter,EDUCATION,0.0
+istar-war,EDUCATION,0.0
+mental-health,EDUCATION,0.0
+box-office,EDUCATION,0.0
+jimmy-fallon,EDUCATION,0.0
+york-city,EDUCATION,2.0
+trump-say,EDUCATION,0.0
+kate-middleton,EDUCATION,0.0
+north-carolina,EDUCATION,0.0
+weight-loss,EDUCATION,0.0
+kanye-west,EDUCATION,0.0
+planned-parenthood,EDUCATION,0.0
+week-photo,EDUCATION,0.0
+trevor-noah,EDUCATION,0.0
+marco-rubio,EDUCATION,0.0
+donald-trump,RELIGION,16.0
+u-s,RELIGION,27.0
+hillary-clinton,RELIGION,3.0
+new-york,RELIGION,8.0
+year-old,RELIGION,4.0
+white-house,RELIGION,6.0
+bernie-sander,RELIGION,0.0
+supreme-court,RELIGION,0.0
+health-care,RELIGION,3.0
+climate-change,RELIGION,5.0
+new-year,RELIGION,8.0
+super-bowl,RELIGION,2.0
+fashion-week,RELIGION,0.0
+look-like,RELIGION,6.0
+morning-email,RELIGION,0.0
+stephen-colbert,RELIGION,0.0
+north-korea,RELIGION,0.0
+kim-kardashian,RELIGION,0.0
+ted-cruz,RELIGION,0.0
+need-know,RELIGION,0.0
+fox-news,RELIGION,2.0
+valentine-day,RELIGION,0.0
+taylor-swift,RELIGION,0.0
+mother-day,RELIGION,0.0
+paul-ryan,RELIGION,0.0
+social-medium,RELIGION,0.0
+photo-poll,RELIGION,0.0
+game-throne,RELIGION,0.0
+joe-biden,RELIGION,0.0
+michelle-obama,RELIGION,0.0
+red-carpet,RELIGION,0.0
+jimmy-kimmel,RELIGION,0.0
+trump-administration,RELIGION,0.0
+high-school,RELIGION,0.0
+sexual-assault,RELIGION,0.0
+open-letter,RELIGION,11.0
+istar-war,RELIGION,0.0
+mental-health,RELIGION,0.0
+box-office,RELIGION,0.0
+jimmy-fallon,RELIGION,0.0
+york-city,RELIGION,4.0
+trump-say,RELIGION,0.0
+kate-middleton,RELIGION,0.0
+north-carolina,RELIGION,7.0
+weight-loss,RELIGION,0.0
+kanye-west,RELIGION,0.0
+planned-parenthood,RELIGION,0.0
+week-photo,RELIGION,0.0
+trevor-noah,RELIGION,0.0
+marco-rubio,RELIGION,0.0
+donald-trump,FIFTY,5.0
+u-s,FIFTY,3.0
+hillary-clinton,FIFTY,0.0
+new-york,FIFTY,0.0
+year-old,FIFTY,8.0
+white-house,FIFTY,0.0
+bernie-sander,FIFTY,0.0
+supreme-court,FIFTY,0.0
+health-care,FIFTY,2.0
+climate-change,FIFTY,0.0
+new-year,FIFTY,3.0
+super-bowl,FIFTY,0.0
+fashion-week,FIFTY,0.0
+look-like,FIFTY,0.0
+morning-email,FIFTY,0.0
+stephen-colbert,FIFTY,0.0
+north-korea,FIFTY,0.0
+kim-kardashian,FIFTY,0.0
+ted-cruz,FIFTY,0.0
+need-know,FIFTY,5.0
+fox-news,FIFTY,0.0
+valentine-day,FIFTY,4.0
+taylor-swift,FIFTY,0.0
+mother-day,FIFTY,7.0
+paul-ryan,FIFTY,0.0
+social-medium,FIFTY,0.0
+photo-poll,FIFTY,0.0
+game-throne,FIFTY,0.0
+joe-biden,FIFTY,0.0
+michelle-obama,FIFTY,0.0
+red-carpet,FIFTY,0.0
+jimmy-kimmel,FIFTY,0.0
+trump-administration,FIFTY,0.0
+high-school,FIFTY,2.0
+sexual-assault,FIFTY,0.0
+open-letter,FIFTY,2.0
+istar-war,FIFTY,0.0
+mental-health,FIFTY,0.0
+box-office,FIFTY,0.0
+jimmy-fallon,FIFTY,0.0
+york-city,FIFTY,0.0
+trump-say,FIFTY,0.0
+kate-middleton,FIFTY,0.0
+north-carolina,FIFTY,0.0
+weight-loss,FIFTY,0.0
+kanye-west,FIFTY,0.0
+planned-parenthood,FIFTY,0.0
+week-photo,FIFTY,0.0
+trevor-noah,FIFTY,0.0
+marco-rubio,FIFTY,0.0
+donald-trump,COLLEGE,6.0
+u-s,COLLEGE,2.0
+hillary-clinton,COLLEGE,2.0
+new-york,COLLEGE,6.0
+year-old,COLLEGE,5.0
+white-house,COLLEGE,2.0
+bernie-sander,COLLEGE,0.0
+supreme-court,COLLEGE,0.0
+health-care,COLLEGE,0.0
+climate-change,COLLEGE,0.0
+new-year,COLLEGE,2.0
+super-bowl,COLLEGE,0.0
+fashion-week,COLLEGE,0.0
+look-like,COLLEGE,2.0
+morning-email,COLLEGE,0.0
+stephen-colbert,COLLEGE,0.0
+north-korea,COLLEGE,0.0
+kim-kardashian,COLLEGE,0.0
+ted-cruz,COLLEGE,0.0
+need-know,COLLEGE,0.0
+fox-news,COLLEGE,0.0
+valentine-day,COLLEGE,0.0
+taylor-swift,COLLEGE,0.0
+mother-day,COLLEGE,0.0
+paul-ryan,COLLEGE,0.0
+social-medium,COLLEGE,4.0
+photo-poll,COLLEGE,0.0
+game-throne,COLLEGE,0.0
+joe-biden,COLLEGE,2.0
+michelle-obama,COLLEGE,0.0
+red-carpet,COLLEGE,0.0
+jimmy-kimmel,COLLEGE,0.0
+trump-administration,COLLEGE,0.0
+high-school,COLLEGE,5.0
+sexual-assault,COLLEGE,36.0
+open-letter,COLLEGE,6.0
+istar-war,COLLEGE,0.0
+mental-health,COLLEGE,4.0
+box-office,COLLEGE,0.0
+jimmy-fallon,COLLEGE,0.0
+york-city,COLLEGE,0.0
+trump-say,COLLEGE,0.0
+kate-middleton,COLLEGE,0.0
+north-carolina,COLLEGE,0.0
+weight-loss,COLLEGE,0.0
+kanye-west,COLLEGE,0.0
+planned-parenthood,COLLEGE,0.0
+week-photo,COLLEGE,0.0
+trevor-noah,COLLEGE,0.0
+marco-rubio,COLLEGE,0.0
+donald-trump,WEIRD NEWS,42.0
+u-s,WEIRD NEWS,0.0
+hillary-clinton,WEIRD NEWS,5.0
+new-york,WEIRD NEWS,6.0
+year-old,WEIRD NEWS,27.0
+white-house,WEIRD NEWS,5.0
+bernie-sander,WEIRD NEWS,0.0
+supreme-court,WEIRD NEWS,0.0
+health-care,WEIRD NEWS,0.0
+climate-change,WEIRD NEWS,0.0
+new-year,WEIRD NEWS,5.0
+super-bowl,WEIRD NEWS,4.0
+fashion-week,WEIRD NEWS,0.0
+look-like,WEIRD NEWS,11.0
+morning-email,WEIRD NEWS,0.0
+stephen-colbert,WEIRD NEWS,0.0
+north-korea,WEIRD NEWS,0.0
+kim-kardashian,WEIRD NEWS,0.0
+ted-cruz,WEIRD NEWS,0.0
+need-know,WEIRD NEWS,0.0
+fox-news,WEIRD NEWS,0.0
+valentine-day,WEIRD NEWS,0.0
+taylor-swift,WEIRD NEWS,3.0
+mother-day,WEIRD NEWS,0.0
+paul-ryan,WEIRD NEWS,0.0
+social-medium,WEIRD NEWS,0.0
+photo-poll,WEIRD NEWS,0.0
+game-throne,WEIRD NEWS,0.0
+joe-biden,WEIRD NEWS,0.0
+michelle-obama,WEIRD NEWS,0.0
+red-carpet,WEIRD NEWS,0.0
+jimmy-kimmel,WEIRD NEWS,0.0
+trump-administration,WEIRD NEWS,0.0
+high-school,WEIRD NEWS,0.0
+sexual-assault,WEIRD NEWS,0.0
+open-letter,WEIRD NEWS,0.0
+istar-war,WEIRD NEWS,6.0
+mental-health,WEIRD NEWS,0.0
+box-office,WEIRD NEWS,0.0
+jimmy-fallon,WEIRD NEWS,0.0
+york-city,WEIRD NEWS,3.0
+trump-say,WEIRD NEWS,0.0
+kate-middleton,WEIRD NEWS,0.0
+north-carolina,WEIRD NEWS,3.0
+weight-loss,WEIRD NEWS,0.0
+kanye-west,WEIRD NEWS,0.0
+planned-parenthood,WEIRD NEWS,0.0
+week-photo,WEIRD NEWS,0.0
+trevor-noah,WEIRD NEWS,0.0
+marco-rubio,WEIRD NEWS,0.0
+donald-trump,MEDIA,206.0
+u-s,MEDIA,20.0
+hillary-clinton,MEDIA,24.0
+new-york,MEDIA,102.0
+year-old,MEDIA,4.0
+white-house,MEDIA,31.0
+bernie-sander,MEDIA,9.0
+supreme-court,MEDIA,0.0
+health-care,MEDIA,0.0
+climate-change,MEDIA,4.0
+new-year,MEDIA,0.0
+super-bowl,MEDIA,0.0
+fashion-week,MEDIA,0.0
+look-like,MEDIA,0.0
+morning-email,MEDIA,0.0
+stephen-colbert,MEDIA,4.0
+north-korea,MEDIA,0.0
+kim-kardashian,MEDIA,0.0
+ted-cruz,MEDIA,11.0
+need-know,MEDIA,0.0
+fox-news,MEDIA,151.0
+valentine-day,MEDIA,0.0
+taylor-swift,MEDIA,0.0
+mother-day,MEDIA,0.0
+paul-ryan,MEDIA,0.0
+social-medium,MEDIA,12.0
+photo-poll,MEDIA,0.0
+game-throne,MEDIA,0.0
+joe-biden,MEDIA,4.0
+michelle-obama,MEDIA,0.0
+red-carpet,MEDIA,0.0
+jimmy-kimmel,MEDIA,0.0
+trump-administration,MEDIA,0.0
+high-school,MEDIA,0.0
+sexual-assault,MEDIA,4.0
+open-letter,MEDIA,0.0
+istar-war,MEDIA,0.0
+mental-health,MEDIA,0.0
+box-office,MEDIA,0.0
+jimmy-fallon,MEDIA,0.0
+york-city,MEDIA,0.0
+trump-say,MEDIA,6.0
+kate-middleton,MEDIA,0.0
+north-carolina,MEDIA,0.0
+weight-loss,MEDIA,0.0
+kanye-west,MEDIA,0.0
+planned-parenthood,MEDIA,0.0
+week-photo,MEDIA,0.0
+trevor-noah,MEDIA,4.0
+marco-rubio,MEDIA,0.0
+donald-trump,LATINO VOICES,29.0
+u-s,LATINO VOICES,35.0
+hillary-clinton,LATINO VOICES,5.0
+new-york,LATINO VOICES,8.0
+year-old,LATINO VOICES,12.0
+white-house,LATINO VOICES,3.0
+bernie-sander,LATINO VOICES,0.0
+supreme-court,LATINO VOICES,2.0
+health-care,LATINO VOICES,3.0
+climate-change,LATINO VOICES,0.0
+new-year,LATINO VOICES,0.0
+super-bowl,LATINO VOICES,0.0
+fashion-week,LATINO VOICES,0.0
+look-like,LATINO VOICES,3.0
+morning-email,LATINO VOICES,0.0
+stephen-colbert,LATINO VOICES,0.0
+north-korea,LATINO VOICES,0.0
+kim-kardashian,LATINO VOICES,0.0
+ted-cruz,LATINO VOICES,2.0
+need-know,LATINO VOICES,0.0
+fox-news,LATINO VOICES,0.0
+valentine-day,LATINO VOICES,0.0
+taylor-swift,LATINO VOICES,0.0
+mother-day,LATINO VOICES,0.0
+paul-ryan,LATINO VOICES,0.0
+social-medium,LATINO VOICES,0.0
+photo-poll,LATINO VOICES,0.0
+game-throne,LATINO VOICES,0.0
+joe-biden,LATINO VOICES,2.0
+michelle-obama,LATINO VOICES,0.0
+red-carpet,LATINO VOICES,0.0
+jimmy-kimmel,LATINO VOICES,0.0
+trump-administration,LATINO VOICES,0.0
+high-school,LATINO VOICES,2.0
+sexual-assault,LATINO VOICES,0.0
+open-letter,LATINO VOICES,4.0
+istar-war,LATINO VOICES,0.0
+mental-health,LATINO VOICES,0.0
+box-office,LATINO VOICES,0.0
+jimmy-fallon,LATINO VOICES,0.0
+york-city,LATINO VOICES,3.0
+trump-say,LATINO VOICES,2.0
+kate-middleton,LATINO VOICES,0.0
+north-carolina,LATINO VOICES,0.0
+weight-loss,LATINO VOICES,0.0
+kanye-west,LATINO VOICES,0.0
+planned-parenthood,LATINO VOICES,3.0
+week-photo,LATINO VOICES,0.0
+trevor-noah,LATINO VOICES,0.0
+marco-rubio,LATINO VOICES,3.0
+donald-trump,STYLE,6.0
+u-s,STYLE,5.0
+hillary-clinton,STYLE,8.0
+new-york,STYLE,17.0
+year-old,STYLE,7.0
+white-house,STYLE,0.0
+bernie-sander,STYLE,0.0
+supreme-court,STYLE,0.0
+health-care,STYLE,0.0
+climate-change,STYLE,0.0
+new-year,STYLE,6.0
+super-bowl,STYLE,0.0
+fashion-week,STYLE,35.0
+look-like,STYLE,14.0
+morning-email,STYLE,0.0
+stephen-colbert,STYLE,0.0
+north-korea,STYLE,0.0
+kim-kardashian,STYLE,15.0
+ted-cruz,STYLE,0.0
+need-know,STYLE,4.0
+fox-news,STYLE,0.0
+valentine-day,STYLE,0.0
+taylor-swift,STYLE,9.0
+mother-day,STYLE,0.0
+paul-ryan,STYLE,0.0
+social-medium,STYLE,0.0
+photo-poll,STYLE,0.0
+game-throne,STYLE,0.0
+joe-biden,STYLE,0.0
+michelle-obama,STYLE,8.0
+red-carpet,STYLE,36.0
+jimmy-kimmel,STYLE,0.0
+trump-administration,STYLE,0.0
+high-school,STYLE,0.0
+sexual-assault,STYLE,0.0
+open-letter,STYLE,0.0
+istar-war,STYLE,0.0
+mental-health,STYLE,0.0
+box-office,STYLE,0.0
+jimmy-fallon,STYLE,0.0
+york-city,STYLE,0.0
+trump-say,STYLE,0.0
+kate-middleton,STYLE,0.0
+north-carolina,STYLE,0.0
+weight-loss,STYLE,0.0
+kanye-west,STYLE,6.0
+planned-parenthood,STYLE,0.0
+week-photo,STYLE,0.0
+trevor-noah,STYLE,0.0
+marco-rubio,STYLE,0.0
+donald-trump,GOOD NEWS,0.0
+u-s,GOOD NEWS,3.0
+hillary-clinton,GOOD NEWS,0.0
+new-york,GOOD NEWS,5.0
+year-old,GOOD NEWS,31.0
+white-house,GOOD NEWS,3.0
+bernie-sander,GOOD NEWS,0.0
+supreme-court,GOOD NEWS,0.0
+health-care,GOOD NEWS,0.0
+climate-change,GOOD NEWS,0.0
+new-year,GOOD NEWS,2.0
+super-bowl,GOOD NEWS,0.0
+fashion-week,GOOD NEWS,0.0
+look-like,GOOD NEWS,2.0
+morning-email,GOOD NEWS,0.0
+stephen-colbert,GOOD NEWS,0.0
+north-korea,GOOD NEWS,0.0
+kim-kardashian,GOOD NEWS,0.0
+ted-cruz,GOOD NEWS,0.0
+need-know,GOOD NEWS,0.0
+fox-news,GOOD NEWS,0.0
+valentine-day,GOOD NEWS,3.0
+taylor-swift,GOOD NEWS,2.0
+mother-day,GOOD NEWS,0.0
+paul-ryan,GOOD NEWS,0.0
+social-medium,GOOD NEWS,0.0
+photo-poll,GOOD NEWS,0.0
+game-throne,GOOD NEWS,0.0
+joe-biden,GOOD NEWS,0.0
+michelle-obama,GOOD NEWS,0.0
+red-carpet,GOOD NEWS,0.0
+jimmy-kimmel,GOOD NEWS,0.0
+trump-administration,GOOD NEWS,0.0
+high-school,GOOD NEWS,10.0
+sexual-assault,GOOD NEWS,0.0
+open-letter,GOOD NEWS,0.0
+istar-war,GOOD NEWS,10.0
+mental-health,GOOD NEWS,0.0
+box-office,GOOD NEWS,0.0
+jimmy-fallon,GOOD NEWS,0.0
+york-city,GOOD NEWS,0.0
+trump-say,GOOD NEWS,0.0
+kate-middleton,GOOD NEWS,0.0
+north-carolina,GOOD NEWS,0.0
+weight-loss,GOOD NEWS,0.0
+kanye-west,GOOD NEWS,0.0
+planned-parenthood,GOOD NEWS,0.0
+week-photo,GOOD NEWS,0.0
+trevor-noah,GOOD NEWS,0.0
+marco-rubio,GOOD NEWS,0.0
+donald-trump,ARTS & CULTURE,32.0
+u-s,ARTS & CULTURE,5.0
+hillary-clinton,ARTS & CULTURE,7.0
+new-york,ARTS & CULTURE,16.0
+year-old,ARTS & CULTURE,13.0
+white-house,ARTS & CULTURE,0.0
+bernie-sander,ARTS & CULTURE,2.0
+supreme-court,ARTS & CULTURE,0.0
+health-care,ARTS & CULTURE,0.0
+climate-change,ARTS & CULTURE,0.0
+new-year,ARTS & CULTURE,0.0
+super-bowl,ARTS & CULTURE,0.0
+fashion-week,ARTS & CULTURE,0.0
+look-like,ARTS & CULTURE,4.0
+morning-email,ARTS & CULTURE,0.0
+stephen-colbert,ARTS & CULTURE,0.0
+north-korea,ARTS & CULTURE,0.0
+kim-kardashian,ARTS & CULTURE,0.0
+ted-cruz,ARTS & CULTURE,0.0
+need-know,ARTS & CULTURE,0.0
+fox-news,ARTS & CULTURE,0.0
+valentine-day,ARTS & CULTURE,0.0
+taylor-swift,ARTS & CULTURE,3.0
+mother-day,ARTS & CULTURE,0.0
+paul-ryan,ARTS & CULTURE,0.0
+social-medium,ARTS & CULTURE,0.0
+photo-poll,ARTS & CULTURE,0.0
+game-throne,ARTS & CULTURE,4.0
+joe-biden,ARTS & CULTURE,0.0
+michelle-obama,ARTS & CULTURE,0.0
+red-carpet,ARTS & CULTURE,0.0
+jimmy-kimmel,ARTS & CULTURE,0.0
+trump-administration,ARTS & CULTURE,0.0
+high-school,ARTS & CULTURE,0.0
+sexual-assault,ARTS & CULTURE,3.0
+open-letter,ARTS & CULTURE,0.0
+istar-war,ARTS & CULTURE,2.0
+mental-health,ARTS & CULTURE,0.0
+box-office,ARTS & CULTURE,0.0
+jimmy-fallon,ARTS & CULTURE,0.0
+york-city,ARTS & CULTURE,0.0
+trump-say,ARTS & CULTURE,0.0
+kate-middleton,ARTS & CULTURE,0.0
+north-carolina,ARTS & CULTURE,0.0
+weight-loss,ARTS & CULTURE,0.0
+kanye-west,ARTS & CULTURE,3.0
+planned-parenthood,ARTS & CULTURE,3.0
+week-photo,ARTS & CULTURE,0.0
+trevor-noah,ARTS & CULTURE,0.0
+marco-rubio,ARTS & CULTURE,0.0
+donald-trump,THE WORLDPOST,55.0
+u-s,THE WORLDPOST,306.0
+hillary-clinton,THE WORLDPOST,0.0
+new-york,THE WORLDPOST,6.0
+year-old,THE WORLDPOST,17.0
+white-house,THE WORLDPOST,0.0
+bernie-sander,THE WORLDPOST,0.0
+supreme-court,THE WORLDPOST,0.0
+health-care,THE WORLDPOST,0.0
+climate-change,THE WORLDPOST,14.0
+new-year,THE WORLDPOST,13.0
+super-bowl,THE WORLDPOST,0.0
+fashion-week,THE WORLDPOST,0.0
+look-like,THE WORLDPOST,0.0
+morning-email,THE WORLDPOST,0.0
+stephen-colbert,THE WORLDPOST,0.0
+north-korea,THE WORLDPOST,102.0
+kim-kardashian,THE WORLDPOST,0.0
+ted-cruz,THE WORLDPOST,0.0
+need-know,THE WORLDPOST,0.0
+fox-news,THE WORLDPOST,0.0
+valentine-day,THE WORLDPOST,0.0
+taylor-swift,THE WORLDPOST,0.0
+mother-day,THE WORLDPOST,0.0
+paul-ryan,THE WORLDPOST,0.0
+social-medium,THE WORLDPOST,13.0
+photo-poll,THE WORLDPOST,0.0
+game-throne,THE WORLDPOST,0.0
+joe-biden,THE WORLDPOST,0.0
+michelle-obama,THE WORLDPOST,0.0
+red-carpet,THE WORLDPOST,0.0
+jimmy-kimmel,THE WORLDPOST,0.0
+trump-administration,THE WORLDPOST,0.0
+high-school,THE WORLDPOST,0.0
+sexual-assault,THE WORLDPOST,0.0
+open-letter,THE WORLDPOST,0.0
+istar-war,THE WORLDPOST,0.0
+mental-health,THE WORLDPOST,0.0
+box-office,THE WORLDPOST,0.0
+jimmy-fallon,THE WORLDPOST,0.0
+york-city,THE WORLDPOST,0.0
+trump-say,THE WORLDPOST,8.0
+kate-middleton,THE WORLDPOST,0.0
+north-carolina,THE WORLDPOST,0.0
+weight-loss,THE WORLDPOST,0.0
+kanye-west,THE WORLDPOST,0.0
+planned-parenthood,THE WORLDPOST,0.0
+week-photo,THE WORLDPOST,0.0
+trevor-noah,THE WORLDPOST,0.0
+marco-rubio,THE WORLDPOST,0.0
+donald-trump,WORLD NEWS,17.0
+u-s,WORLD NEWS,254.0
+hillary-clinton,WORLD NEWS,0.0
+new-york,WORLD NEWS,0.0
+year-old,WORLD NEWS,15.0
+white-house,WORLD NEWS,0.0
+bernie-sander,WORLD NEWS,0.0
+supreme-court,WORLD NEWS,6.0
+health-care,WORLD NEWS,0.0
+climate-change,WORLD NEWS,17.0
+new-year,WORLD NEWS,5.0
+super-bowl,WORLD NEWS,0.0
+fashion-week,WORLD NEWS,0.0
+look-like,WORLD NEWS,0.0
+morning-email,WORLD NEWS,0.0
+stephen-colbert,WORLD NEWS,0.0
+north-korea,WORLD NEWS,166.0
+kim-kardashian,WORLD NEWS,0.0
+ted-cruz,WORLD NEWS,0.0
+need-know,WORLD NEWS,8.0
+fox-news,WORLD NEWS,0.0
+valentine-day,WORLD NEWS,0.0
+taylor-swift,WORLD NEWS,0.0
+mother-day,WORLD NEWS,0.0
+paul-ryan,WORLD NEWS,0.0
+social-medium,WORLD NEWS,5.0
+photo-poll,WORLD NEWS,0.0
+game-throne,WORLD NEWS,0.0
+joe-biden,WORLD NEWS,0.0
+michelle-obama,WORLD NEWS,0.0
+red-carpet,WORLD NEWS,0.0
+jimmy-kimmel,WORLD NEWS,0.0
+trump-administration,WORLD NEWS,7.0
+high-school,WORLD NEWS,0.0
+sexual-assault,WORLD NEWS,0.0
+open-letter,WORLD NEWS,0.0
+istar-war,WORLD NEWS,0.0
+mental-health,WORLD NEWS,0.0
+box-office,WORLD NEWS,0.0
+jimmy-fallon,WORLD NEWS,0.0
+york-city,WORLD NEWS,0.0
+trump-say,WORLD NEWS,6.0
+kate-middleton,WORLD NEWS,0.0
+north-carolina,WORLD NEWS,0.0
+weight-loss,WORLD NEWS,0.0
+kanye-west,WORLD NEWS,0.0
+planned-parenthood,WORLD NEWS,0.0
+week-photo,WORLD NEWS,0.0
+trevor-noah,WORLD NEWS,0.0
+marco-rubio,WORLD NEWS,0.0
+donald-trump,U.S. NEWS,0.0
+u-s,U.S. NEWS,91.0
+hillary-clinton,U.S. NEWS,0.0
+new-york,U.S. NEWS,24.0
+year-old,U.S. NEWS,15.0
+white-house,U.S. NEWS,7.0
+bernie-sander,U.S. NEWS,0.0
+supreme-court,U.S. NEWS,14.0
+health-care,U.S. NEWS,0.0
+climate-change,U.S. NEWS,3.0
+new-year,U.S. NEWS,3.0
+super-bowl,U.S. NEWS,4.0
+fashion-week,U.S. NEWS,0.0
+look-like,U.S. NEWS,2.0
+morning-email,U.S. NEWS,0.0
+stephen-colbert,U.S. NEWS,0.0
+north-korea,U.S. NEWS,0.0
+kim-kardashian,U.S. NEWS,2.0
+ted-cruz,U.S. NEWS,0.0
+need-know,U.S. NEWS,0.0
+fox-news,U.S. NEWS,0.0
+valentine-day,U.S. NEWS,0.0
+taylor-swift,U.S. NEWS,0.0
+mother-day,U.S. NEWS,0.0
+paul-ryan,U.S. NEWS,0.0
+social-medium,U.S. NEWS,4.0
+photo-poll,U.S. NEWS,0.0
+game-throne,U.S. NEWS,0.0
+joe-biden,U.S. NEWS,3.0
+michelle-obama,U.S. NEWS,0.0
+red-carpet,U.S. NEWS,0.0
+jimmy-kimmel,U.S. NEWS,0.0
+trump-administration,U.S. NEWS,6.0
+high-school,U.S. NEWS,5.0
+sexual-assault,U.S. NEWS,5.0
+open-letter,U.S. NEWS,0.0
+istar-war,U.S. NEWS,0.0
+mental-health,U.S. NEWS,0.0
+box-office,U.S. NEWS,0.0
+jimmy-fallon,U.S. NEWS,0.0
+york-city,U.S. NEWS,8.0
+trump-say,U.S. NEWS,0.0
+kate-middleton,U.S. NEWS,0.0
+north-carolina,U.S. NEWS,5.0
+weight-loss,U.S. NEWS,0.0
+kanye-west,U.S. NEWS,0.0
+planned-parenthood,U.S. NEWS,0.0
+week-photo,U.S. NEWS,0.0
+trevor-noah,U.S. NEWS,0.0
+marco-rubio,U.S. NEWS,0.0
+donald-trump,TOTAL,4621.0
+u-s,TOTAL,2746.0
+hillary-clinton,TOTAL,1323.0
+new-york,TOTAL,1221.0
+year-old,TOTAL,1018.0
+white-house,TOTAL,871.0
+bernie-sander,TOTAL,702.0
+supreme-court,TOTAL,677.0
+health-care,TOTAL,655.0
+climate-change,TOTAL,598.0
+new-year,TOTAL,528.0
+super-bowl,TOTAL,428.0
+fashion-week,TOTAL,427.0
+look-like,TOTAL,414.0
+morning-email,TOTAL,408.0
+stephen-colbert,TOTAL,401.0
+north-korea,TOTAL,396.0
+kim-kardashian,TOTAL,368.0
+ted-cruz,TOTAL,364.0
+need-know,TOTAL,345.0
+fox-news,TOTAL,340.0
+valentine-day,TOTAL,336.0
+taylor-swift,TOTAL,333.0
+mother-day,TOTAL,324.0
+paul-ryan,TOTAL,313.0
+social-medium,TOTAL,310.0
+photo-poll,TOTAL,308.0
+joe-biden,TOTAL,272.0
+game-throne,TOTAL,272.0
+michelle-obama,TOTAL,267.0
+jimmy-kimmel,TOTAL,266.0
+red-carpet,TOTAL,266.0
+trump-administration,TOTAL,264.0
+high-school,TOTAL,264.0
+sexual-assault,TOTAL,262.0
+open-letter,TOTAL,260.0
+istar-war,TOTAL,256.0
+mental-health,TOTAL,248.0
+box-office,TOTAL,247.0
+jimmy-fallon,TOTAL,246.0
+york-city,TOTAL,239.0
+trump-say,TOTAL,237.0
+kate-middleton,TOTAL,235.0
+north-carolina,TOTAL,234.0
+weight-loss,TOTAL,231.0
+kanye-west,TOTAL,230.0
+planned-parenthood,TOTAL,229.0
+week-photo,TOTAL,228.0
+trevor-noah,TOTAL,226.0
+marco-rubio,TOTAL,217.0
