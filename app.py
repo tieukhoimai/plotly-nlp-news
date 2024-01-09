@@ -20,14 +20,14 @@ from dash import html
 import plotly.graph_objs as go
 import plotly.express as px
 import pandas as pd
+
 import warnings
 warnings.filterwarnings("ignore")
+warnings.simplefilter("ignore", category=UserWarning)
 
 figure = {}
 
 bigram_df = pd.read_csv("data/news_bigram_counts_data.csv")
-DEDUP_DF = pd.read_csv("data/dedup_data.csv")
-
 
 DATA_PATH = pathlib.Path(__file__).parent.resolve()
 EXTERNAL_STYLESHEETS = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
@@ -36,12 +36,18 @@ FILENAME_PRECOMPUTED = "data/precomputed.json"
 LOGO = "https://raw.githubusercontent.com/tieukhoimai/mia-blog-v3/main/public/static/images/logo.png"
 
 DF = pd.read_json('data/News_Category_Dataset_v3.json', lines=True)
-
-# Reorder Columns
-DF = DF[['date','headline','short_description','category','authors','link']]
+DEDUP_DF = pd.read_csv("data/dedup_data.csv")
+PROCESSED_DF = pd.read_csv("data/processed_data.csv")
 
 with open(DATA_PATH.joinpath(FILENAME_PRECOMPUTED)) as precomputed_file:
     PRECOMPUTED_LDA = json.load(precomputed_file)
+
+"""
+Reorder column
+"""
+
+DF = DF[['date','headline','short_description','category','authors','link']]
+PROCESSED_DF = PROCESSED_DF[['date','headline','short_description','category','authors','link']]
 
 """
 Casting the column to datetime
@@ -53,6 +59,10 @@ DF["date"] = pd.to_datetime(
 
 DEDUP_DF["date"] = pd.to_datetime(
     DEDUP_DF["date"]
+)
+
+PROCESSED_DF["date"] = pd.to_datetime(
+    PROCESSED_DF["date"]
 )
 
 """
@@ -112,12 +122,12 @@ def count_words(text):
     else:
         return 0
     
-def make_local_df(selected_category, n_selection):
-    print("redrawing bank-wordcloud...")
+def make_local_df(dataframe, selected_category, n_selection):
+    print("redrawing wordcloud...")
     n_float = float(n_selection / 100)
     print("got n_selection:", str(n_selection), str(n_float))
     # sample the dataset according to the slider
-    local_df = sample_data(DF, n_float)
+    local_df = sample_data(dataframe, n_float)
     if selected_category:
         local_df = local_df[local_df["category"] == selected_category]
     return local_df
@@ -132,15 +142,16 @@ def make_options_category_drop(values):
         ret.append({"label": value, "value": value})
     return ret
 
-
-def plotly_wordcloud(data_frame):
-    articles_text = list(data_frame["short_description"].dropna().values)
+def plotly_wordcloud(data_frame, bigram_flag = False):
+    if bigram_flag:
+        articles_text = data_frame["bigram"].tolist()
+    else:
+        articles_text = list(data_frame["headline"].dropna().values)
 
     if len(articles_text) < 1:
         return {}, {}, {}
 
-    # join all documents in corpus
-    text = " ".join(list(articles_text))
+    text = " ".join(articles_text)
 
     word_cloud = WordCloud(stopwords=STOPWORDS,
                            max_words=100, max_font_size=90)
@@ -229,7 +240,11 @@ def plotly_wordcloud(data_frame):
     )
     treemap_layout = go.Layout({"margin": dict(t=10, b=10, l=5, r=5, pad=4)})
     treemap_figure = {"data": [treemap_trace], "layout": treemap_layout}
-    return wordcloud_figure_data, frequency_figure_data, treemap_figure
+
+    if bigram_flag:
+        return wordcloud_figure_data, treemap_figure
+    else:
+        return wordcloud_figure_data, frequency_figure_data, treemap_figure
 
 
 """
@@ -327,7 +342,7 @@ WORDCLOUD_PLOTS = [
                     dbc.Col(
                         dcc.Loading(
                             id="loading-frequencies",
-                            children=[dcc.Graph(id="frequency_figure")],
+                            children=[dcc.Graph(id="frequency-figure")],
                             type="default",
                         )
                     ),
@@ -370,6 +385,39 @@ WORDCLOUD_PLOTS = [
         ]
     ),
 ]
+
+# WORDCLOUD_PLOT_BIGRAM = [
+#     dbc.CardHeader(html.H5("Most frequently used Bi-Grams in articles")),
+#     dbc.Alert(
+#         "Not enough data to render these plots, please adjust the filters",
+#         id="no-data-alert-bigram",
+#         color="warning",
+#         style={"display": "none"},
+#     ),
+#     dbc.CardBody(
+#         [
+#             dbc.Row(
+#                 [
+#                     dbc.Col(
+#                         dcc.Loading(
+#                             id="loading-wordcloud-bigram",
+#                             children=[dcc.Graph(id="category-wordcloud-bigram")],
+#                             type="default",
+#                         )
+#                     ),
+#                     dbc.Col(
+#                         dcc.Loading(
+#                             id="loading-treemap-bigram",
+#                             children=[
+#                                 dcc.Graph(id="category-treemap-bigram")],
+#                             type="default",
+#                         )
+#                     ),
+#                 ]
+#             )
+#         ]
+#     ),
+# ]
 
 CLEANING_DESCRIPTION = [
     dbc.CardHeader(html.H5("Data Cleaning Preprocessing")),
@@ -437,8 +485,18 @@ PREPROCESSING_DESCRIPTION = [
         [
             html.P("1. Remove HTML, Hyperlinks, Newlines, Numbers, Remove Special Characters, Punctuation, Whitespace"),
             html.P("2. Decontracted takes text and convert contractions into natural form."),
-            html.P("3. Remove stop words"),
-            html.P("4. Lemmatize (using NLTK)"),
+            html.P("3. Tokenization: Split the text into sentences and the sentences into words."),
+            html.P("4. Remove stop words"),
+            html.P("5. Lemmatize: words in third person are changed to first person and verbs in past and future tenses are changed into present."),
+            html.P("6. Stemme: words are reduced to their root form"),
+            dcc.Loading(
+                dash_table.DataTable(
+                id='table_preprocess',
+                data=PROCESSED_DF[:5].to_dict('records'),
+                columns=[{"name": i, "id": i} for i in PROCESSED_DF.columns],
+                style_table={'fontSize':12, 'overflowX': 'auto'},
+                ),
+            ),
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -486,12 +544,12 @@ TOP_BIGRAM_CATEGORYS = [
                             dbc.Col(
                                 [
                                     dcc.Dropdown(
-                                        id="bigrams-category",
+                                        id="bigrams-drops",
                                         options=[
                                             {"label": i, "value": i}
                                             for i in bigram_df.category.unique()
                                         ],
-                                        value="TOTAL",
+                                        value="POLITICS",
                                     )
                                 ],
                                 md=6,
@@ -545,7 +603,7 @@ TOP_BIGRAM_COMPARISION = [
                                             {"label": i, "value": i}
                                             for i in bigram_df.category.unique()
                                         ],
-                                        value="WELLNESS",
+                                        value="TOTAL",
                                     )
                                 ],
                                 md=6,
@@ -563,6 +621,9 @@ TOP_BIGRAM_COMPARISION = [
 
 BODY = dbc.Container(
     [
+
+        #### PART 1
+
         html.H4("DATA EXPLORATION", style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(ORGINAL_TABLE)),],
                 style={"marginTop": 30}),
@@ -577,11 +638,15 @@ BODY = dbc.Container(
                 style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(WORDCLOUD_PLOTS)),],
                 style={"marginTop": 30}),
-        ####
+
+        #### PART 2
+
         html.H4("DATA CLEANING", style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(CLEANING_DESCRIPTION)),],
                         style={"marginTop": 30}),
-        ####
+
+        #### PART 3
+
         html.H4("TEXTUAL PREPROCESSING AND ANALYSIS", style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(HEADLINE_BOXPLOT)),],
                 style={"marginTop": 30}),
@@ -717,7 +782,7 @@ def update_bar_plot_by_date_and_category(n_value):
 @app.callback(
     [
         Output("category-wordcloud", "figure"),
-        Output("frequency_figure", "figure"),
+        Output("frequency-figure", "figure"),
         Output("category-treemap", "figure"),
         Output("no-data-alert", "style"),
     ],
@@ -728,13 +793,37 @@ def update_bar_plot_by_date_and_category(n_value):
 )
 def update_wordcloud_plot(value_drop, n_selection):
     """ Callback to rerender wordcloud plot """
-    local_df = make_local_df(value_drop, n_selection)
+    local_df = make_local_df(DF, value_drop, n_selection)
     wordcloud, frequency_figure, treemap = plotly_wordcloud(local_df)
     alert_style = {"display": "none"}
     if (wordcloud == {}) or (frequency_figure == {}) or (treemap == {}):
         alert_style = {"display": "block"}
     print("redrawing category-wordcloud...done")
     return (wordcloud, frequency_figure, treemap, alert_style)
+
+
+# @app.callback(
+#     [
+#         Output("category-wordcloud-bigram", "figure"),
+#         Output("category-treemap-bigram", "figure"),
+#         Output("no-data-alert-bigram", "style"),
+#     ],
+#     [
+#         [Input("bigrams-drops", "value")]
+#     ],
+# )
+# def update_wordcloud_plot_bigram(value_drop):
+#     """ Callback to rerender wordcloud plot for bigram_df """
+
+#     category_lst = [value_drop]
+#     local_df = bigram_df[bigram_df.category.isin(category_lst)]
+
+#     wordcloud, treemap = plotly_wordcloud(local_df, bigram_flag=True)
+#     alert_style = {"display": "none"}
+#     if (wordcloud == {}) or (treemap == {}):
+#         alert_style = {"display": "block"}
+#     print("redrawing category-wordcloud...done")
+#     return (wordcloud, treemap, alert_style)
 
 
 @app.callback(
@@ -762,7 +851,8 @@ def update_headline_distribution_plot(n_value):
     return fig
 
 
-@app.callback(Output("category-drop", "value"), [Input("category-sample", "clickData")])
+@app.callback(Output("category-drop", "value"), 
+              [Input("category-sample", "clickData")])
 def update_category_drop_on_click(value):
     if value is not None:
         selected_category = value["points"][0]["x"]
@@ -776,11 +866,11 @@ def update_category_drop_on_click(value):
 
 @app.callback(
     Output("bigrams-category-plot", "figure"),
-    [Input("bigrams-category", "value")],
+    [Input("bigrams-drops", "value")],
 )
-def category_bigram(category_options):
+def category_bigram(bigrams_drops):
 
-    category_lst = [category_options]
+    category_lst = [bigrams_drops]
     temp_df = bigram_df[bigram_df.category.isin(category_lst)]
     temp_df = temp_df.sort_values(by=['value'], ascending=False)[:10]
 
