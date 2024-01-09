@@ -26,7 +26,7 @@ warnings.filterwarnings("ignore")
 figure = {}
 
 bigram_df = pd.read_csv("data/news_bigram_counts_data.csv")
-dedup_df = pd.read_csv("data/dedup_data.csv")
+DEDUP_DF = pd.read_csv("data/dedup_data.csv")
 
 
 DATA_PATH = pathlib.Path(__file__).parent.resolve()
@@ -36,6 +36,9 @@ FILENAME_PRECOMPUTED = "data/precomputed.json"
 LOGO = "https://raw.githubusercontent.com/tieukhoimai/mia-blog-v3/main/public/static/images/logo.png"
 
 DF = pd.read_json('data/News_Category_Dataset_v3.json', lines=True)
+
+# Reorder Columns
+DF = DF[['date','headline','short_description','category','authors','link']]
 
 with open(DATA_PATH.joinpath(FILENAME_PRECOMPUTED)) as precomputed_file:
     PRECOMPUTED_LDA = json.load(precomputed_file)
@@ -48,25 +51,24 @@ DF["date"] = pd.to_datetime(
     DF["date"]
 )
 
-dedup_df["date"] = pd.to_datetime(
-    dedup_df["date"]
+DEDUP_DF["date"] = pd.to_datetime(
+    DEDUP_DF["date"]
 )
 
 """
 In order to make the graphs more useful we decided to prevent some words from being included
 """
 ADDITIONAL_STOPWORDS = [
-    "XXXX",
-    "XX",
-    "xx",
-    "xxxx",
     "n't",
     "s",
     "will",
-    "BOA",
-    "Citi",
-    "account",
+    "u",
+    "say",
+    "says",
+    "said",
+    "HuffPost Style",
 ]
+
 for stopword in ADDITIONAL_STOPWORDS:
     STOPWORDS.add(stopword)
 
@@ -103,7 +105,13 @@ def calculate_category_sample_data(dataframe, sample_size):
 
     return values_sample, counts_sample
 
-
+def count_words(text):
+    if isinstance(text, str):
+        words = text.split()
+        return len(words)
+    else:
+        return 0
+    
 def make_local_df(selected_category, n_selection):
     print("redrawing bank-wordcloud...")
     n_float = float(n_selection / 100)
@@ -114,10 +122,11 @@ def make_local_df(selected_category, n_selection):
         local_df = local_df[local_df["category"] == selected_category]
     return local_df
 
+def add_word_length_feature(dataframe, column):
+    dataframe['word_length'] = dataframe[column].apply(count_words)
+    return dataframe
+
 def make_options_category_drop(values):
-    """
-    Helper function to generate the data format the dropdown dash component wants
-    """
     ret = []
     for value in values:
         ret.append({"label": value, "value": value})
@@ -125,7 +134,6 @@ def make_options_category_drop(values):
 
 
 def plotly_wordcloud(data_frame):
-    """returns figure data for three equally plots: wordcloud, frequency histogram and treemap"""
     articles_text = list(data_frame["short_description"].dropna().values)
 
     if len(articles_text) < 1:
@@ -288,6 +296,21 @@ LEFT_COLUMN = dbc.Jumbotron(
     ]
 )
 
+ORGINAL_TABLE = [
+    dbc.CardHeader(html.H5("Orginal Data")),
+    dbc.CardBody(
+        [
+            html.P(id='table_out'),
+            dash_table.DataTable(
+                id='table',
+                data=DF[:10].to_dict('records'),
+                columns=[{"name": i, "id": i} for i in DF.columns],
+                style_table={'fontSize':12, 'overflowX': 'auto'},
+            ), 
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
 
 WORDCLOUD_PLOTS = [
     dbc.CardHeader(html.H5("Most frequently used words in articles")),
@@ -348,23 +371,74 @@ WORDCLOUD_PLOTS = [
     ),
 ]
 
+CLEANING_DESCRIPTION = [
+    dbc.CardHeader(html.H5("Data Cleaning Preprocessing")),
+    dbc.CardBody(
+        [
+            html.P("1. Excluding Articles with Null or Invalid Published Date: 0 instances"),
+            html.P("2. Drop duplicate articles and keep the earliest publication date: 22,505 instances"),
+            dcc.Loading(
+                dash_table.DataTable(
+                id='table_dedup',
+                data=DF.loc[DF.short_description.duplicated()][:5].to_dict('records'),
+                columns=[{"name": i, "id": i} for i in DF.columns],
+                style_table={'fontSize':12, 'overflowX': 'auto'},
+                ),
+            ),
+            html.P(""),
+            html.P("3. Eliminate articles which having invalid headline length: 1 instances with word count is 0"),
+            dcc.Loading(
+                id="loading-headline-length-dist",
+                children=[
+                    dcc.Graph(id="headline-length-dist"),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+BAR_CATEGORYS_PLOT = [
+    dbc.CardHeader(html.H5("Number of articles by top 10 category and year")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-categorys-bar",
+                children=[
+                    dcc.Graph(id="date-category-bar-chart"),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
 HEADLINE_BOXPLOT = [
-    dbc.CardHeader(html.H5("Distribution of article headline's wordcliped")),
+    dbc.CardHeader(html.H5("Distribution of article headline's length")),
     dbc.CardBody(
         [
             dcc.Loading(
                 id="loading-categorys-boxplot",
                 children=[
-                    dbc.Alert(
-                        "Not enough data to render this plot, please adjust the filters",
-                        id="no-boxplot-data-alert",
-                        color="warning",
-                        style={"display": "none"},
-                    ),
                     dcc.Graph(id="headline-boxplot"),
                 ],
                 type="default",
             )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+PREPROCESSING_DESCRIPTION = [
+    dbc.CardHeader(html.H5("Textual Preprocessing")),
+    dbc.CardBody(
+        [
+            html.P("1. Remove HTML, Hyperlinks, Newlines, Numbers, Remove Special Characters, Punctuation, Whitespace"),
+            html.P("2. Decontracted takes text and convert contractions into natural form."),
+            html.P("3. Remove stop words"),
+            html.P("4. Lemmatize (using NLTK)"),
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -408,7 +482,7 @@ TOP_BIGRAM_CATEGORYS = [
                     dbc.Row(
                         [
                             dbc.Col(
-                                html.P("Choose categories to see op 10 bigram:"), md=12),
+                                html.P("Choose categories to see Top 10 bigram:"), md=12),
                             dbc.Col(
                                 [
                                     dcc.Dropdown(
@@ -424,7 +498,7 @@ TOP_BIGRAM_CATEGORYS = [
                             ),
                         ]
                     ),
-                    dcc.Graph(id="bigrams-category_plot"),
+                    dcc.Graph(id="bigrams-category-plot"),
                 ],
                 type="default",
             )
@@ -490,6 +564,8 @@ TOP_BIGRAM_COMPARISION = [
 BODY = dbc.Container(
     [
         html.H4("DATA EXPLORATION", style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(ORGINAL_TABLE)),],
+                style={"marginTop": 30}),
         dbc.Row(
             [
                 dbc.Col(LEFT_COLUMN, md=4, align="center"),
@@ -497,12 +573,20 @@ BODY = dbc.Container(
             ],
             style={"marginTop": 30},
             ),
+        dbc.Row([dbc.Col(dbc.Card(BAR_CATEGORYS_PLOT)),],
+                style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(WORDCLOUD_PLOTS)),],
                 style={"marginTop": 30}),
+        ####
+        html.H4("DATA CLEANING", style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(CLEANING_DESCRIPTION)),],
+                        style={"marginTop": 30}),
+        ####
+        html.H4("TEXTUAL PREPROCESSING AND ANALYSIS", style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(HEADLINE_BOXPLOT)),],
                 style={"marginTop": 30}),
-                
-        html.H4("HEADLINE ANALYSIS", style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(PREPROCESSING_DESCRIPTION)),],
+                style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_BIGRAM_CATEGORYS)),],
                 style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_BIGRAM_COMPARISION)),],
@@ -525,6 +609,14 @@ app.layout = html.Div(children=[NAVBAR, BODY])
 ##  DATA EXPLORATION
 """
 
+@app.callback(
+    Output('table_out', 'children'), 
+    Input('table', 'active_cell'))
+def update_graphs(active_cell):
+    if active_cell:
+        cell_data = DF.iloc[active_cell['row']][active_cell['column_id']]
+        return f"Data: \"{cell_data}\" from table cell: {active_cell}"
+    return ""
 
 @app.callback(
     Output("category-drop", "options"),
@@ -537,6 +629,22 @@ def populate_category_dropdown(n_value):
     counts.append(1)
     return make_options_category_drop(category_names)
 
+
+@app.callback(
+    Output("headline-length-dist", "figure"),
+    [Input("n-selection-slider", "value")],
+)
+def update_article_distribution(n_value):
+    # This step need show full data to count so not using n_values params
+    fig = px.histogram(
+        DEDUP_DF,
+        x='words_clipped_headline',
+        template='plotly_white',
+        marginal='box',
+        labels={"words_clipped_headline": "Words count", "count": "Number of Articles"})
+    fig.update_xaxes(categoryorder='total descending', title='Words count')
+    fig.update_yaxes(title='Number of article')
+    return fig
 
 @app.callback(
     [Output("category-sample", "figure"),Output("no-data-alert-category", "style")],
@@ -571,6 +679,42 @@ def update_category_sample_plot(n_value):
     return [{"data": data, "layout": layout}, {"display": "none"}]
 
 @app.callback(
+        Output("date-category-bar-chart", "figure"),
+        [Input("n-selection-slider", "value"),]
+)
+def update_bar_plot_by_date_and_category(n_value):
+
+    n_float = float(n_value / 100)
+    local_df = sample_data(DF, n_float)
+
+    # Pre-processing data by get top 10 category
+    top_category = (
+        local_df.groupby("category")["link"]
+        .count()
+        .sort_values(ascending=False)[:10]
+        .index
+    )
+
+    top_category_df = local_df[local_df["category"].isin(top_category)]
+    top_category_df['date'] = pd.to_datetime(top_category_df["date"])
+
+    # Articles by category & date
+    fig = px.histogram(
+        top_category_df,
+        x="date",
+        template="plotly_white",
+        color="category",
+        nbins=10,
+        log_y=True,
+        barmode="group",
+    )
+    fig.update_xaxes(categoryorder="category ascending", title="Year").update_yaxes(
+        title="Number of articles"
+    )
+    return fig
+
+
+@app.callback(
     [
         Output("category-wordcloud", "figure"),
         Output("frequency_figure", "figure"),
@@ -579,7 +723,6 @@ def update_category_sample_plot(n_value):
     ],
     [
         Input("category-drop", "value"),
-        
         Input("n-selection-slider", "value"),
     ],
 )
@@ -596,10 +739,7 @@ def update_wordcloud_plot(value_drop, n_selection):
 
 @app.callback(
         Output("headline-boxplot", "figure"),
-    [
-        Input("n-selection-slider", "value"),
-        
-    ],
+    [   Input("n-selection-slider", "value"),  ],
 )
 def update_headline_distribution_plot(n_value):
 
@@ -607,7 +747,8 @@ def update_headline_distribution_plot(n_value):
     print("\tn is:", n_value)
 
     n_float = float(n_value / 100)
-    local_df = sample_data(dedup_df, n_float)
+
+    local_df = sample_data(DEDUP_DF[DEDUP_DF['words_clipped_headline'] > 0], n_float)
 
     fig = px.box(local_df,
                  x = 'category',
@@ -634,7 +775,7 @@ def update_category_drop_on_click(value):
 """
 
 @app.callback(
-    Output("bigrams-category_plot", "figure"),
+    Output("bigrams-category-plot", "figure"),
     [Input("bigrams-category", "value")],
 )
 def category_bigram(category_options):
@@ -652,7 +793,7 @@ def category_bigram(category_options):
     layout = go.Layout(template="plotly_white",
                        margin=dict(l=20, r=20, t=30, b=20),
                        xaxis=dict(title='Count'), 
-                       yaxis=dict(title='Bigram', autorange="reversed"))
+                       yaxis=dict(title='Bi-Gram', autorange="reversed"))
 
     fig = go.Figure(data=[trace], layout=layout)
 
