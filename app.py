@@ -30,17 +30,12 @@ figure = {}
 bigram_df = pd.read_csv("data/news_bigram_counts_data.csv")
 
 DATA_PATH = pathlib.Path(__file__).parent.resolve()
-EXTERNAL_STYLESHEETS = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
-FILENAME_PRECOMPUTED = "data/precomputed.json"
 LOGO = "https://raw.githubusercontent.com/tieukhoimai/mia-blog-v3/main/public/static/images/logo.png"
 
 DF = pd.read_json('data/News_Category_Dataset_v3.json', lines=True)
 DEDUP_DF = pd.read_csv("data/dedup_data.csv")
 PROCESSED_DF = pd.read_csv("data/processed_data.csv")
-
-with open(DATA_PATH.joinpath(FILENAME_PRECOMPUTED)) as precomputed_file:
-    PRECOMPUTED_LDA = json.load(precomputed_file)
 
 """
 Reorder column
@@ -656,6 +651,9 @@ BODY = dbc.Container(
                 style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_BIGRAM_COMPARISION)),],
                 style={"marginTop": 30}),
+
+        #### PART 3
+        html.H4("LDA TOPIC - MODELLING", style={"marginTop": 30}),
     ],
     className="mt-12",
 )
