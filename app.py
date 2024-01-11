@@ -13,17 +13,25 @@ from datetime import datetime
 import flask
 import dash
 from dash import dash_table
-import matplotlib.colors as mcolors
+import pandas as pd
+from collections import Counter
+import gensim
+
 import dash_bootstrap_components as dbc
 from dash import dcc
 from dash import html
+
 import plotly.graph_objs as go
 import plotly.express as px
-import pandas as pd
+from plotly.subplots import make_subplots
+
+
 
 import warnings
 warnings.filterwarnings("ignore")
 warnings.simplefilter("ignore", category=UserWarning)
+
+from gensim.models.ldamodel import LdaModel
 
 figure = {}
 
@@ -36,6 +44,9 @@ LOGO = "https://raw.githubusercontent.com/tieukhoimai/mia-blog-v3/main/public/st
 DF = pd.read_json('data/News_Category_Dataset_v3.json', lines=True)
 DEDUP_DF = pd.read_csv("data/dedup_data.csv")
 PROCESSED_DF = pd.read_csv("data/processed_data.csv")
+DOMINANT_TOPIC_DF = pd.read_csv('data/lda_data.csv')
+
+LDA_MODEL = LdaModel.load("model/model_lda.model")
 
 """
 Reorder column
@@ -241,6 +252,68 @@ def plotly_wordcloud(data_frame, bigram_flag = False):
     else:
         return wordcloud_figure_data, frequency_figure_data, treemap_figure
 
+def sent_to_words(sentences):
+    for sentence in sentences:
+        yield(gensim.utils.simple_preprocess(str(sentence), deacc=True))
+
+def plot_lda_by_topic():
+    topics = LDA_MODEL.show_topics(formatted=False)
+    data = list(PROCESSED_DF['headline'].values)
+
+    data_words = list(sent_to_words(data))
+
+    data_flat = [w for w_list in data_words for w in w_list]
+    counter = Counter(data_flat)
+
+    out = []
+    for i, topic in topics:
+        for word, weight in topic:
+            out.append([word, i, weight, counter[word]])
+
+    local_df = pd.DataFrame(out, columns=['word', 'topic_id', 'importance', 'word_count'])
+
+    # Create subplot
+    fig = make_subplots(rows=1, cols=5, subplot_titles=['Topic: ' + str(i) for i in range(5)],
+                        shared_yaxes=True, vertical_spacing=0.2)
+
+    for i in range(5):
+        subplot_df = local_df.loc[local_df.topic_id == i, :]
+        
+        fig.add_trace(
+            go.Bar(x=subplot_df['word'], y=subplot_df['word_count'], name='Word Count',
+                text=subplot_df.apply(lambda row: f"Word Count: {row['word_count']}, Importance: {row['importance']:.3f}", axis=1),
+                hoverinfo='text+x+y',  # Set hover information
+                textposition='outside'),  # Set text position outside the bars
+            row=1, col=i + 1
+        )
+
+    # Update layout
+    fig.update_layout(
+        margin=dict(l=20, r=20, t=30, b=20),
+        # title_text='Word Count and Importance of Topic Keywords',
+        showlegend=False
+    )
+
+    return fig
+
+def create_dominant_topic_groupby_df(dataframe):
+    df_dominant_topic_groupby = dataframe.groupby(by=['Dominant_Topic','Topic_Keywords','category'])['headline'].count().reset_index()
+    df_dominant_topic_groupby.columns = ['Dominant_Topic','Topic_Keywords','Category', 'Count']
+
+    return df_dominant_topic_groupby
+
+def create_top_category_dominant_topic_df():
+    top_category = (
+        DF.groupby("category")["link"]
+        .count()
+        .sort_values(ascending=False)[:20]
+        .index
+    )
+
+    df_dominant_topic_groupby = create_dominant_topic_groupby_df(DOMINANT_TOPIC_DF)
+    top_category_dominant_topic_df = df_dominant_topic_groupby[df_dominant_topic_groupby["Category"].isin(top_category)]
+
+    return top_category_dominant_topic_df
 
 """
 #  Page layout and contents
@@ -380,39 +453,6 @@ WORDCLOUD_PLOTS = [
         ]
     ),
 ]
-
-# WORDCLOUD_PLOT_BIGRAM = [
-#     dbc.CardHeader(html.H5("Most frequently used Bi-Grams in articles")),
-#     dbc.Alert(
-#         "Not enough data to render these plots, please adjust the filters",
-#         id="no-data-alert-bigram",
-#         color="warning",
-#         style={"display": "none"},
-#     ),
-#     dbc.CardBody(
-#         [
-#             dbc.Row(
-#                 [
-#                     dbc.Col(
-#                         dcc.Loading(
-#                             id="loading-wordcloud-bigram",
-#                             children=[dcc.Graph(id="category-wordcloud-bigram")],
-#                             type="default",
-#                         )
-#                     ),
-#                     dbc.Col(
-#                         dcc.Loading(
-#                             id="loading-treemap-bigram",
-#                             children=[
-#                                 dcc.Graph(id="category-treemap-bigram")],
-#                             type="default",
-#                         )
-#                     ),
-#                 ]
-#             )
-#         ]
-#     ),
-# ]
 
 CLEANING_DESCRIPTION = [
     dbc.CardHeader(html.H5("Data Cleaning Preprocessing")),
@@ -614,6 +654,59 @@ TOP_BIGRAM_COMPARISION = [
     ),
 ]
 
+LDA_DESCRIPTION = [
+    dbc.CardHeader(html.H5("LDA Preprocessing")),
+    dbc.CardBody(
+        [
+            html.P("Latent Dirichlet Allocation(LDA) is a popular algorithm for topic modeling with implementations in the Python’s Gensim package. LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion."),
+            dcc.Loading(
+                dash_table.DataTable(
+                id='table_dominant_topic',
+                data=DOMINANT_TOPIC_DF.loc[:5].to_dict('records'),
+                columns=[{"name": i, "id": i} for i in DOMINANT_TOPIC_DF.columns],
+                style_table={'fontSize':12, 'overflowX': 'auto'},
+                ),
+            ),
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+LDA_CHART_BY_TOPIC = [
+    dbc.CardHeader(html.H5("Word Count and Importance of Topic Keywords")),
+    dbc.CardBody(
+        [
+            dcc.Graph(id="lda-topic"),
+            html.P("This means that Topic 0 is a represented as 0.015*studi + 0.012*poll + 0.010*health + 0.009*idea + 0.009*new + 0.008*network + 0.008*guid + 0.007*hous + 0.006*diy + 0.006*plan"),
+            html.P("Generally speaking, the top 10 keywords that contribute to this topic are: 'study', 'poll', 'health',... and so on. The weights reflect how important a keyword is to that topic. The weight of 'study' on topic 0 is 0.015.")
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+LDA_CHART_TOPIC_BY_TOP_CATEGORY = [
+    dbc.CardHeader(html.H5("Topic Volum across Top Category")),
+    dbc.CardBody(
+        [
+            dcc.Graph(id="lda-topic-by-top-category"),
+            html.P("Topic 0 dominates the 'POLITICS' category with more than 20k articles, evident from the high count in the corresponding bar"),
+            html.P("Other topics are more evenly distributed across the top 10 categories, showcasing a balanced distribution."),
+            dcc.Graph(id="lda-top-category-by-topic"),
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+LDA_CHART_TOPIC_BY_HEATMAP = [
+    dbc.CardHeader(html.H5("Dominant Topic-Category Distribution")),
+    dbc.CardBody(
+        [
+            dcc.Graph(id="lda-category-by-topic-heatmap"),
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
 BODY = dbc.Container(
     [
 
@@ -654,6 +747,14 @@ BODY = dbc.Container(
 
         #### PART 3
         html.H4("LDA TOPIC - MODELLING", style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(LDA_DESCRIPTION)),],
+                style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(LDA_CHART_BY_TOPIC)),],
+                style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(LDA_CHART_TOPIC_BY_TOP_CATEGORY)),],
+                style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(LDA_CHART_TOPIC_BY_HEATMAP)),],
+                style={"marginTop": 30}),
     ],
     className="mt-12",
 )
@@ -800,30 +901,6 @@ def update_wordcloud_plot(value_drop, n_selection):
     return (wordcloud, frequency_figure, treemap, alert_style)
 
 
-# @app.callback(
-#     [
-#         Output("category-wordcloud-bigram", "figure"),
-#         Output("category-treemap-bigram", "figure"),
-#         Output("no-data-alert-bigram", "style"),
-#     ],
-#     [
-#         [Input("bigrams-drops", "value")]
-#     ],
-# )
-# def update_wordcloud_plot_bigram(value_drop):
-#     """ Callback to rerender wordcloud plot for bigram_df """
-
-#     category_lst = [value_drop]
-#     local_df = bigram_df[bigram_df.category.isin(category_lst)]
-
-#     wordcloud, treemap = plotly_wordcloud(local_df, bigram_flag=True)
-#     alert_style = {"display": "none"}
-#     if (wordcloud == {}) or (treemap == {}):
-#         alert_style = {"display": "block"}
-#     print("redrawing category-wordcloud...done")
-#     return (wordcloud, treemap, alert_style)
-
-
 @app.callback(
         Output("headline-boxplot", "figure"),
     [   Input("n-selection-slider", "value"),  ],
@@ -914,6 +991,96 @@ def category_bigram_comparisons(category_first, category_second):
     fig.data[0]["hovertemplate"] = fig.data[0]["hovertemplate"][:-14]
     return fig
 
+@app.callback(
+        Output("lda-topic", "figure"),
+        [
+            Input("n-selection-slider", "value"),
+        ],
+)
+def show_lda_by_topic(n_selection):
+    lda_by_topic = plot_lda_by_topic()
+    
+    return lda_by_topic
+
+@app.callback(
+        Output("lda-topic-by-top-category", "figure"),
+        [
+            Input("n-selection-slider", "value"),
+        ],
+)
+def show_lda_topic_by_top_category(n_selection):
+    local_df = create_top_category_dominant_topic_df()
+
+    fig = px.bar(local_df, 
+                x='Dominant_Topic', 
+                y='Count',
+                text='Count',
+                hover_data=['Topic_Keywords'],
+                color='Category',
+                labels={'Count':'Number of Articles','Dominant_Topic':'Dominant Topic'},
+                barmode="group",
+                )
+
+    fig.update_traces(textposition='outside')
+    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
+    
+    return fig
+
+
+@app.callback(
+        Output("lda-top-category-by-topic", "figure"),
+        [
+            Input("n-selection-slider", "value"),
+        ],
+)
+def show_lda_top_category_by_topic(n_selection):
+    local_df = create_top_category_dominant_topic_df()
+
+    local_df['Dominant_Topic'] = local_df['Dominant_Topic'].astype(str)
+
+    fig = px.bar(local_df, 
+                x='Category', 
+                y='Count',
+                text='Count',
+                hover_data=['Topic_Keywords'],
+                color='Dominant_Topic',
+                labels={'Count':'Number of Articles'},
+                barmode="stack",
+                #  facet_col="Dominant_Topic",
+                #  category_orders={"Dominant_Topic": ["0", "1", "2", "3", "4"]}
+                )
+
+    fig.update_traces(textposition='outside')
+    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
+    
+    return fig
+
+
+@app.callback(
+        Output("lda-category-by-topic-heatmap", "figure"),
+        [
+            Input("n-selection-slider", "value"),
+        ],
+)
+def show_lda_category_by_topic_heatmap(n_selection):
+    df_dominant_topic_groupby = create_dominant_topic_groupby_df(DOMINANT_TOPIC_DF)
+
+    df_dominant_topic_corr = df_dominant_topic_groupby[['Dominant_Topic','Category','Count']]
+    df_dominant_topic_corr = df_dominant_topic_corr[df_dominant_topic_groupby["Category"]!='POLITICS']
+
+    heatmap_data = df_dominant_topic_corr.pivot(index='Dominant_Topic', columns='Category', values='Count')
+
+    fig = px.imshow(heatmap_data, color_continuous_scale='Teal', origin='lower', text_auto=True, aspect="auto")
+
+    fig.update_yaxes(title='Dominate Topic')
+    fig.update_xaxes(title='Category (Excluding POLICTICS)')
+    
+    return fig
+
+
+"""
+##  LDA MODELING
+"""
 
 if __name__ == "__main__":
     app.run_server(debug=True)
