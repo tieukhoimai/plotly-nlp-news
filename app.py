@@ -162,8 +162,6 @@ def make_local_df(dataframe, selected_category, n_selection, time_values):
             (local_df["year"] >= time_values[0])
             & (local_df["year"] <= time_values[1])
         ]
-    # sample the dataset according to the slider
-    local_df = sample_data(dataframe, n_float)
     if selected_category:
         local_df = local_df[local_df["category"] == selected_category]
     return local_df
@@ -990,12 +988,19 @@ def update_category_sample_plot(n_value, time_values):
 
 @app.callback(
         Output("date-category-bar-chart", "figure"),
-        [Input("n-selection-slider", "value"),]
+        [Input("n-selection-slider", "value"), Input("year-slider","value")]
 )
-def update_bar_plot_by_date_and_category(n_value):
+def update_bar_plot_by_date_and_category(n_value, time_values):
 
     n_float = float(n_value / 100)
     local_df = sample_data(DF, n_float)
+    
+    if time_values is not None and 'year' in local_df.columns:
+        local_df["year"] = local_df["year"].astype(int)
+        local_df = local_df[
+            (local_df["year"] >= time_values[0])
+            & (local_df["year"] <= time_values[1])
+        ]
 
     # Pre-processing data by get top 10 category
     top_category = (
