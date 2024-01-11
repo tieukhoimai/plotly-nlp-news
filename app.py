@@ -62,6 +62,8 @@ Casting the column to datetime
 DF["date"] = pd.to_datetime(
     DF["date"]
 )
+DF.sort_values('date', inplace=True)
+DF['year'] = pd.to_datetime(DF['date']).dt.strftime('%Y').astype(int)
 
 DEDUP_DF["date"] = pd.to_datetime(
     DEDUP_DF["date"]
@@ -88,7 +90,6 @@ ADDITIONAL_STOPWORDS = [
 for stopword in ADDITIONAL_STOPWORDS:
     STOPWORDS.add(stopword)
 
-
 def sample_data(dataframe, float_percent):
     """
     Returns a subset of the provided dataframe.
@@ -96,7 +97,6 @@ def sample_data(dataframe, float_percent):
     """
     print("making a local_df data sample with float_percent: %s" % (float_percent))
     return dataframe.sample(frac=float_percent, random_state=1)
-
 
 def get_article_count_by_company(dataframe):
     """ Helper function to get article counts for unique categorys """
@@ -107,12 +107,21 @@ def get_article_count_by_company(dataframe):
     counts = category_counts.tolist()
     return values, counts
 
-
-def calculate_category_sample_data(dataframe, sample_size):
+def calculate_category_sample_data(dataframe, sample_size, time_values):
     print(
         "making category_sample_data with sample_size count: %s"
         % (sample_size)
     )
+
+    dataframe["year"] = dataframe["year"].astype(int)
+
+    if time_values is not None:
+        min_date = time_values[0]
+        max_date = time_values[1]
+        dataframe = dataframe[
+            (dataframe["year"] >= min_date)
+            & (dataframe["year"] <= max_date)
+        ]
 
     category_counts = dataframe["category"].value_counts()
     category_counts_sample = category_counts[:sample_size]
@@ -128,10 +137,31 @@ def count_words(text):
     else:
         return 0
     
-def make_local_df(dataframe, selected_category, n_selection):
+def plot_bar_chart_by_category_and_date(dataframe):
+    DF["year"] = DF["year"].astype(str)
+
+    fig = px.histogram(DF,
+                   x='year',
+                   template='plotly_white',
+                   color='category')
+    fig.update_xaxes(title='Year')
+    fig.update_yaxes(title='Number of Articles')
+    return fig
+
+def make_local_df(dataframe, selected_category, n_selection, time_values):
     print("redrawing wordcloud...")
     n_float = float(n_selection / 100)
+    print("got time window:", str(time_values))
     print("got n_selection:", str(n_selection), str(n_float))
+    
+    # sample the dataset according to the slider
+    local_df = sample_data(dataframe, n_float)
+    if time_values is not None and 'year' in dataframe.columns:
+        local_df["year"] = local_df["year"].astype(int)
+        local_df = local_df[
+            (local_df["year"] >= time_values[0])
+            & (local_df["year"] <= time_values[1])
+        ]
     # sample the dataset according to the slider
     local_df = sample_data(dataframe, n_float)
     if selected_category:
@@ -256,6 +286,10 @@ def sent_to_words(sentences):
     for sentence in sentences:
         yield(gensim.utils.simple_preprocess(str(sentence), deacc=True))
 
+"""
+LDA Modelling
+"""
+
 def plot_lda_by_topic():
     topics = LDA_MODEL.show_topics(formatted=False)
     data = list(PROCESSED_DF['headline'].values)
@@ -315,6 +349,65 @@ def create_top_category_dominant_topic_df():
 
     return top_category_dominant_topic_df
 
+def plot_lda_topic_by_top_category():
+    local_df = create_top_category_dominant_topic_df()
+
+    fig = px.bar(local_df, 
+                x='Dominant_Topic', 
+                y='Count',
+                text='Count',
+                hover_data=['Topic_Keywords'],
+                color='Category',
+                labels={'Count':'Number of Articles','Dominant_Topic':'Dominant Topic'},
+                barmode="group",
+                )
+
+    fig.update_traces(textposition='outside')
+    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
+    
+    return fig
+
+def plot_lda_top_category_by_topic():
+    local_df = create_top_category_dominant_topic_df()
+
+    local_df['Dominant_Topic'] = local_df['Dominant_Topic'].astype(str)
+
+    fig = px.bar(local_df, 
+                x='Category', 
+                y='Count',
+                text='Count',
+                hover_data=['Topic_Keywords'],
+                color='Dominant_Topic',
+                labels={'Count':'Number of Articles'},
+                barmode="stack",
+                #  facet_col="Dominant_Topic",
+                #  category_orders={"Dominant_Topic": ["0", "1", "2", "3", "4"]}
+                )
+
+    fig.update_traces(textposition='outside')
+    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
+    
+    return fig
+
+def plot_lda_category_by_topic_heatmap():
+    df_dominant_topic_groupby = create_dominant_topic_groupby_df(DOMINANT_TOPIC_DF)
+
+    df_dominant_topic_corr = df_dominant_topic_groupby[['Dominant_Topic','Category','Count']]
+    df_dominant_topic_corr = df_dominant_topic_corr[df_dominant_topic_groupby["Category"]!='POLITICS']
+
+    heatmap_data = df_dominant_topic_corr.pivot(index='Dominant_Topic', columns='Category', values='Count')
+
+    fig = px.imshow(heatmap_data, color_continuous_scale='Teal', origin='lower', text_auto=True, aspect="auto")
+
+    fig.update_yaxes(title='Dominate Topic')
+    fig.update_xaxes(title='Category (Excluding POLICTICS)')
+
+    fig.update_layout(
+        margin=dict(l=20, r=20, t=30, b=20),
+    )
+    
+    return fig
+
 """
 #  Page layout and contents
 """
@@ -343,8 +436,12 @@ NAVBAR = dbc.Navbar(
 
 LEFT_COLUMN = dbc.Jumbotron(
     [
-        html.H4(children="Select category & data size",
+        html.H4(children="Filter",
                 className="display-5"),
+        html.P(
+            "(Only apply for DATA EXPLORATION Section)",
+            style={"fontSize": 12, "font-weight": "lighter"},
+        ),
         html.Hr(className="my-2"),
         html.Label("Select percentage of dataset", className="lead"),
         dcc.Slider(
@@ -370,12 +467,20 @@ LEFT_COLUMN = dbc.Jumbotron(
         html.Label("Select a category", style={
                    "marginTop": 50}, className="lead"),
         html.P(
-            "(You can use the dropdown or click the barchart on the right)",
+            "(Using the dropdown or clicking the barchart on the right)",
             style={"fontSize": 10, "font-weight": "lighter"},
         ),
         dcc.Dropdown(
             id="category-drop", clearable=False, style={"marginBottom": 50, "font-size": 12}
         ),
+        html.Label("Select time frame", className="lead"),
+        dcc.RangeSlider(
+            DF['year'].min(),
+            DF['year'].max(),
+            value=[DF['year'].min(),DF['year'].max()],
+            marks={str(year): str(year) for year in DF['year'].unique()[::2]},
+            id='year-slider',
+        )
     ]
 )
 
@@ -389,7 +494,12 @@ ORGINAL_TABLE = [
                 data=DF[:10].to_dict('records'),
                 columns=[{"name": i, "id": i} for i in DF.columns],
                 style_table={'fontSize':12, 'overflowX': 'auto'},
-            ), 
+            ),
+            dcc.Graph(figure=plot_bar_chart_by_category_and_date(DF)),
+            html.P("Key Findings:"),
+            html.Li("Dataset has total 42 distinct categories of news articles."),
+            html.Li("'POLITICS' is the most common category of news in dataset."),
+            html.Li("There are total of 29169 unique authors who have written various news articles."),
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -676,7 +786,7 @@ LDA_CHART_BY_TOPIC = [
     dbc.CardHeader(html.H5("Word Count and Importance of Topic Keywords")),
     dbc.CardBody(
         [
-            dcc.Graph(id="lda-topic"),
+            dcc.Graph(figure=plot_lda_by_topic()),
             html.P("This means that Topic 0 is a represented as 0.015*studi + 0.012*poll + 0.010*health + 0.009*idea + 0.009*new + 0.008*network + 0.008*guid + 0.007*hous + 0.006*diy + 0.006*plan"),
             html.P("Generally speaking, the top 10 keywords that contribute to this topic are: 'study', 'poll', 'health',... and so on. The weights reflect how important a keyword is to that topic. The weight of 'study' on topic 0 is 0.015.")
         ],
@@ -688,10 +798,10 @@ LDA_CHART_TOPIC_BY_TOP_CATEGORY = [
     dbc.CardHeader(html.H5("Topic Volum across Top Category")),
     dbc.CardBody(
         [
-            dcc.Graph(id="lda-topic-by-top-category"),
+            dcc.Graph(figure=plot_lda_top_category_by_topic()),
             html.P("Topic 0 dominates the 'POLITICS' category with more than 20k articles, evident from the high count in the corresponding bar"),
             html.P("Other topics are more evenly distributed across the top 10 categories, showcasing a balanced distribution."),
-            dcc.Graph(id="lda-top-category-by-topic"),
+            dcc.Graph(figure=plot_lda_top_category_by_topic()),
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -701,7 +811,7 @@ LDA_CHART_TOPIC_BY_HEATMAP = [
     dbc.CardHeader(html.H5("Dominant Topic-Category Distribution")),
     dbc.CardBody(
         [
-            dcc.Graph(id="lda-category-by-topic-heatmap"),
+            dcc.Graph(figure=plot_lda_category_by_topic_heatmap()),
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -773,6 +883,38 @@ app.layout = html.Div(children=[NAVBAR, BODY])
 ##  DATA EXPLORATION
 """
 
+
+# @app.callback(
+#     [
+#         Output("time-window-slider", "marks"),
+#         Output("time-window-slider", "min"),
+#         Output("time-window-slider", "max"),
+#         Output("time-window-slider", "step"),
+#         Output("time-window-slider", "value"),
+#     ],
+#     [Input("n-selection-slider", "value")],
+# )
+# def populate_time_slider(value):
+#     """
+#     This function returns the
+#     needed data to the time-window-slider.
+#     """
+#     value += 0
+#     min_date = DF["year"].min()
+#     max_date = DF["year"].max()
+
+#     marks = marks={str(year): str(year) for year in DF['year'].unique()[::2]}
+#     min_epoch = list(marks.keys())[0]
+#     max_epoch = list(marks.keys())[-1]
+
+#     return (
+#         marks,
+#         min_epoch,
+#         max_epoch,
+#         None,
+#         [min_epoch, max_epoch],
+#     )
+
 @app.callback(
     Output('table_out', 'children'), 
     Input('table', 'active_cell'))
@@ -785,10 +927,13 @@ def update_graphs(active_cell):
 @app.callback(
     Output("category-drop", "options"),
     [
-     Input("n-selection-slider", "value")],
+     Input("n-selection-slider", "value"), Input("year-slider","value")
+    ],
 )
-def populate_category_dropdown(n_value):
+def populate_category_dropdown(n_value, time_values):
     n_value += 1
+    if time_values is not None:
+        pass
     category_names, counts = get_article_count_by_company(DF)
     counts.append(1)
     return make_options_category_drop(category_names)
@@ -810,11 +955,12 @@ def update_article_distribution(n_value):
     fig.update_yaxes(title='Number of article')
     return fig
 
+
 @app.callback(
     [Output("category-sample", "figure"),Output("no-data-alert-category", "style")],
-    [Input("n-selection-slider", "value"),],
+    [Input("n-selection-slider", "value"), Input("year-slider","value")],
 )
-def update_category_sample_plot(n_value):
+def update_category_sample_plot(n_value, time_values):
     print("redrawing category-sample...")
     print("\tn is:", n_value)
     n_float = float(n_value / 100)
@@ -822,7 +968,7 @@ def update_category_sample_plot(n_value):
     local_df = sample_data(DF, n_float)
 
     values_sample, counts_sample = calculate_category_sample_data(
-        local_df, category_sample_count
+        local_df, category_sample_count, time_values
     )
     data = [
         {
@@ -888,11 +1034,12 @@ def update_bar_plot_by_date_and_category(n_value):
     [
         Input("category-drop", "value"),
         Input("n-selection-slider", "value"),
+        Input("year-slider", "value"),
     ],
 )
-def update_wordcloud_plot(value_drop, n_selection):
+def update_wordcloud_plot(value_drop, n_selection, time_values):
     """ Callback to rerender wordcloud plot """
-    local_df = make_local_df(DF, value_drop, n_selection)
+    local_df = make_local_df(DF, value_drop, n_selection, time_values)
     wordcloud, frequency_figure, treemap = plotly_wordcloud(local_df)
     alert_style = {"display": "none"}
     if (wordcloud == {}) or (frequency_figure == {}) or (treemap == {}):
@@ -991,96 +1138,6 @@ def category_bigram_comparisons(category_first, category_second):
     fig.data[0]["hovertemplate"] = fig.data[0]["hovertemplate"][:-14]
     return fig
 
-@app.callback(
-        Output("lda-topic", "figure"),
-        [
-            Input("n-selection-slider", "value"),
-        ],
-)
-def show_lda_by_topic(n_selection):
-    lda_by_topic = plot_lda_by_topic()
-    
-    return lda_by_topic
-
-@app.callback(
-        Output("lda-topic-by-top-category", "figure"),
-        [
-            Input("n-selection-slider", "value"),
-        ],
-)
-def show_lda_topic_by_top_category(n_selection):
-    local_df = create_top_category_dominant_topic_df()
-
-    fig = px.bar(local_df, 
-                x='Dominant_Topic', 
-                y='Count',
-                text='Count',
-                hover_data=['Topic_Keywords'],
-                color='Category',
-                labels={'Count':'Number of Articles','Dominant_Topic':'Dominant Topic'},
-                barmode="group",
-                )
-
-    fig.update_traces(textposition='outside')
-    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
-    
-    return fig
-
-
-@app.callback(
-        Output("lda-top-category-by-topic", "figure"),
-        [
-            Input("n-selection-slider", "value"),
-        ],
-)
-def show_lda_top_category_by_topic(n_selection):
-    local_df = create_top_category_dominant_topic_df()
-
-    local_df['Dominant_Topic'] = local_df['Dominant_Topic'].astype(str)
-
-    fig = px.bar(local_df, 
-                x='Category', 
-                y='Count',
-                text='Count',
-                hover_data=['Topic_Keywords'],
-                color='Dominant_Topic',
-                labels={'Count':'Number of Articles'},
-                barmode="stack",
-                #  facet_col="Dominant_Topic",
-                #  category_orders={"Dominant_Topic": ["0", "1", "2", "3", "4"]}
-                )
-
-    fig.update_traces(textposition='outside')
-    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
-    
-    return fig
-
-
-@app.callback(
-        Output("lda-category-by-topic-heatmap", "figure"),
-        [
-            Input("n-selection-slider", "value"),
-        ],
-)
-def show_lda_category_by_topic_heatmap(n_selection):
-    df_dominant_topic_groupby = create_dominant_topic_groupby_df(DOMINANT_TOPIC_DF)
-
-    df_dominant_topic_corr = df_dominant_topic_groupby[['Dominant_Topic','Category','Count']]
-    df_dominant_topic_corr = df_dominant_topic_corr[df_dominant_topic_groupby["Category"]!='POLITICS']
-
-    heatmap_data = df_dominant_topic_corr.pivot(index='Dominant_Topic', columns='Category', values='Count')
-
-    fig = px.imshow(heatmap_data, color_continuous_scale='Teal', origin='lower', text_auto=True, aspect="auto")
-
-    fig.update_yaxes(title='Dominate Topic')
-    fig.update_xaxes(title='Category (Excluding POLICTICS)')
-    
-    return fig
-
-
-"""
-##  LDA MODELING
-"""
 
 if __name__ == "__main__":
     app.run_server(debug=True)
