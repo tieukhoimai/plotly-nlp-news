@@ -626,7 +626,7 @@ PREPROCESSING_DESCRIPTION = [
     dbc.CardHeader(html.H5("Textual Preprocessing")),
     dbc.CardBody(
         [
-            html.P("1. Remove HTML, Hyperlinks, Newlines, Numbers, Remove Special Characters, Punctuation, Whitespace"),
+            html.P("1. Remove HTML, Hyperlinks, Newlines, Numbers, Punctuation, Whitespace"),
             html.P("2. Decontracted takes text and convert contractions into natural form."),
             html.P("3. Tokenization: Split the text into sentences and the sentences into words."),
             html.P("4. Remove stop words"),
@@ -880,38 +880,6 @@ app.layout = html.Div(children=[NAVBAR, BODY])
 """
 ##  DATA EXPLORATION
 """
-
-
-# @app.callback(
-#     [
-#         Output("time-window-slider", "marks"),
-#         Output("time-window-slider", "min"),
-#         Output("time-window-slider", "max"),
-#         Output("time-window-slider", "step"),
-#         Output("time-window-slider", "value"),
-#     ],
-#     [Input("n-selection-slider", "value")],
-# )
-# def populate_time_slider(value):
-#     """
-#     This function returns the
-#     needed data to the time-window-slider.
-#     """
-#     value += 0
-#     min_date = DF["year"].min()
-#     max_date = DF["year"].max()
-
-#     marks = marks={str(year): str(year) for year in DF['year'].unique()[::2]}
-#     min_epoch = list(marks.keys())[0]
-#     max_epoch = list(marks.keys())[-1]
-
-#     return (
-#         marks,
-#         min_epoch,
-#         max_epoch,
-#         None,
-#         [min_epoch, max_epoch],
-#     )
 
 @app.callback(
     Output('table_out', 'children'), 
