@@ -629,9 +629,9 @@ PREPROCESSING_DESCRIPTION = [
             html.P("1. Remove HTML, Hyperlinks, Newlines, Numbers, Punctuation, Whitespace"),
             html.P("2. Decontracted takes text and convert contractions into natural form."),
             html.P("3. Tokenization: Split the text into sentences and the sentences into words."),
-            html.P("4. Remove stop words"),
-            html.P("5. Lemmatize: words in third person are changed to first person and verbs in past and future tenses are changed into present."),
-            html.P("6. Stemme: words are reduced to their root form"),
+            html.P("4. Remove stop words: remove common words that carry little (or perhaps no) meaningful information."),
+            html.P("5. Lemmatization: words in third person are changed to first person and verbs in past and future tenses are changed into present."),
+            html.P("6. Stemming: words are reduced to their root form."),
             dcc.Loading(
                 dash_table.DataTable(
                 id='table_preprocess',
