@@ -43,62 +43,12 @@ york_citi,U.S. NEWS,8.0
 kate_middleton,U.S. NEWS,0.0
 north_carolina,U.S. NEWS,5.0
 sexual_harass,U.S. NEWS,0.0
-week_photo,U.S. NEWS,0.0
 kany_west,U.S. NEWS,0.0
+week_photo,U.S. NEWS,0.0
 plan_parenthood,U.S. NEWS,0.0
 trevor_noah,U.S. NEWS,0.0
 marco_rubio,U.S. NEWS,0.0
 mike_penni,U.S. NEWS,3.0
-donald_trump,COMEDY,581.0
-hillari_clinton,COMEDY,38.0
-new_york,COMEDY,11.0
-white_hous,COMEDY,45.0
-berni_sander,COMEDY,22.0
-suprem_court,COMEDY,0.0
-health_care,COMEDY,11.0
-climat_chang,COMEDY,12.0
-new_year,COMEDY,11.0
-look_like,COMEDY,21.0
-fashion_week,COMEDY,0.0
-studi_find,COMEDY,0.0
-super_bowl,COMEDY,24.0
-morn_email,COMEDY,0.0
-stephen_colbert,COMEDY,283.0
-north_korea,COMEDY,7.0
-kim_kardashian,COMEDY,0.0
-ted_cruz,COMEDY,18.0
-need_know,COMEDY,0.0
-fox_news,COMEDY,28.0
-taylor_swift,COMEDY,0.0
-valentin_day,COMEDY,13.0
-mother_day,COMEDY,0.0
-paul_ryan,COMEDY,19.0
-social_medium,COMEDY,7.0
-photo_poll,COMEDY,0.0
-sexual_assault,COMEDY,0.0
-joe_biden,COMEDY,6.0
-michell_obama,COMEDY,0.0
-jimmi_kimmel,COMEDY,143.0
-game_throne,COMEDY,16.0
-trump_administr,COMEDY,10.0
-red_carpet,COMEDY,0.0
-high_school,COMEDY,0.0
-open_letter,COMEDY,0.0
-istar_war,COMEDY,20.0
-mental_health,COMEDY,0.0
-jimmi_fallon,COMEDY,135.0
-trump_say,COMEDY,0.0
-box_offic,COMEDY,0.0
-york_citi,COMEDY,0.0
-kate_middleton,COMEDY,0.0
-north_carolina,COMEDY,0.0
-sexual_harass,COMEDY,0.0
-week_photo,COMEDY,0.0
-kany_west,COMEDY,10.0
-plan_parenthood,COMEDY,0.0
-trevor_noah,COMEDY,166.0
-marco_rubio,COMEDY,0.0
-mike_penni,COMEDY,11.0
 donald_trump,PARENTING,0.0
 hillari_clinton,PARENTING,0.0
 new_york,PARENTING,13.0
@@ -143,12 +93,62 @@ york_citi,PARENTING,0.0
 kate_middleton,PARENTING,10.0
 north_carolina,PARENTING,0.0
 sexual_harass,PARENTING,0.0
-week_photo,PARENTING,0.0
 kany_west,PARENTING,0.0
+week_photo,PARENTING,0.0
 plan_parenthood,PARENTING,0.0
 trevor_noah,PARENTING,0.0
 marco_rubio,PARENTING,0.0
 mike_penni,PARENTING,0.0
+donald_trump,COMEDY,581.0
+hillari_clinton,COMEDY,38.0
+new_york,COMEDY,11.0
+white_hous,COMEDY,45.0
+berni_sander,COMEDY,22.0
+suprem_court,COMEDY,0.0
+health_care,COMEDY,11.0
+climat_chang,COMEDY,12.0
+new_year,COMEDY,11.0
+look_like,COMEDY,21.0
+fashion_week,COMEDY,0.0
+studi_find,COMEDY,0.0
+super_bowl,COMEDY,24.0
+morn_email,COMEDY,0.0
+stephen_colbert,COMEDY,283.0
+north_korea,COMEDY,7.0
+kim_kardashian,COMEDY,0.0
+ted_cruz,COMEDY,18.0
+need_know,COMEDY,0.0
+fox_news,COMEDY,28.0
+taylor_swift,COMEDY,0.0
+valentin_day,COMEDY,13.0
+mother_day,COMEDY,0.0
+paul_ryan,COMEDY,19.0
+social_medium,COMEDY,7.0
+photo_poll,COMEDY,0.0
+sexual_assault,COMEDY,0.0
+joe_biden,COMEDY,6.0
+michell_obama,COMEDY,0.0
+jimmi_kimmel,COMEDY,143.0
+game_throne,COMEDY,16.0
+trump_administr,COMEDY,10.0
+red_carpet,COMEDY,0.0
+high_school,COMEDY,0.0
+open_letter,COMEDY,0.0
+istar_war,COMEDY,20.0
+mental_health,COMEDY,0.0
+jimmi_fallon,COMEDY,135.0
+trump_say,COMEDY,0.0
+box_offic,COMEDY,0.0
+york_citi,COMEDY,0.0
+kate_middleton,COMEDY,0.0
+north_carolina,COMEDY,0.0
+sexual_harass,COMEDY,0.0
+kany_west,COMEDY,10.0
+week_photo,COMEDY,0.0
+plan_parenthood,COMEDY,0.0
+trevor_noah,COMEDY,166.0
+marco_rubio,COMEDY,0.0
+mike_penni,COMEDY,11.0
 donald_trump,WORLD NEWS,17.0
 hillari_clinton,WORLD NEWS,0.0
 new_york,WORLD NEWS,0.0
@@ -193,8 +193,8 @@ york_citi,WORLD NEWS,0.0
 kate_middleton,WORLD NEWS,0.0
 north_carolina,WORLD NEWS,0.0
 sexual_harass,WORLD NEWS,6.0
-week_photo,WORLD NEWS,0.0
 kany_west,WORLD NEWS,0.0
+week_photo,WORLD NEWS,0.0
 plan_parenthood,WORLD NEWS,0.0
 trevor_noah,WORLD NEWS,0.0
 marco_rubio,WORLD NEWS,0.0
@@ -243,8 +243,8 @@ york_citi,CULTURE & ARTS,0.0
 kate_middleton,CULTURE & ARTS,0.0
 north_carolina,CULTURE & ARTS,0.0
 sexual_harass,CULTURE & ARTS,0.0
-week_photo,CULTURE & ARTS,2.0
 kany_west,CULTURE & ARTS,0.0
+week_photo,CULTURE & ARTS,2.0
 plan_parenthood,CULTURE & ARTS,0.0
 trevor_noah,CULTURE & ARTS,0.0
 marco_rubio,CULTURE & ARTS,0.0
@@ -293,8 +293,8 @@ york_citi,TECH,4.0
 kate_middleton,TECH,0.0
 north_carolina,TECH,0.0
 sexual_harass,TECH,0.0
-week_photo,TECH,0.0
 kany_west,TECH,0.0
+week_photo,TECH,0.0
 plan_parenthood,TECH,0.0
 trevor_noah,TECH,0.0
 marco_rubio,TECH,0.0
@@ -332,7 +332,7 @@ jimmi_kimmel,SPORTS,0.0
 game_throne,SPORTS,0.0
 trump_administr,SPORTS,0.0
 red_carpet,SPORTS,0.0
-high_school,SPORTS,39.0
+high_school,SPORTS,38.0
 open_letter,SPORTS,0.0
 istar_war,SPORTS,0.0
 mental_health,SPORTS,0.0
@@ -343,8 +343,8 @@ york_citi,SPORTS,0.0
 kate_middleton,SPORTS,0.0
 north_carolina,SPORTS,12.0
 sexual_harass,SPORTS,0.0
-week_photo,SPORTS,0.0
 kany_west,SPORTS,0.0
+week_photo,SPORTS,0.0
 plan_parenthood,SPORTS,0.0
 trevor_noah,SPORTS,0.0
 marco_rubio,SPORTS,0.0
@@ -393,15 +393,15 @@ york_citi,ENTERTAINMENT,0.0
 kate_middleton,ENTERTAINMENT,0.0
 north_carolina,ENTERTAINMENT,0.0
 sexual_harass,ENTERTAINMENT,49.0
-week_photo,ENTERTAINMENT,0.0
 kany_west,ENTERTAINMENT,137.0
+week_photo,ENTERTAINMENT,0.0
 plan_parenthood,ENTERTAINMENT,0.0
 trevor_noah,ENTERTAINMENT,29.0
 marco_rubio,ENTERTAINMENT,0.0
 mike_penni,ENTERTAINMENT,0.0
 donald_trump,POLITICS,2993.0
 hillari_clinton,POLITICS,1052.0
-new_york,POLITICS,206.0
+new_york,POLITICS,205.0
 white_hous,POLITICS,621.0
 berni_sander,POLITICS,626.0
 suprem_court,POLITICS,560.0
@@ -443,8 +443,8 @@ york_citi,POLITICS,0.0
 kate_middleton,POLITICS,0.0
 north_carolina,POLITICS,123.0
 sexual_harass,POLITICS,75.0
-week_photo,POLITICS,0.0
 kany_west,POLITICS,0.0
+week_photo,POLITICS,0.0
 plan_parenthood,POLITICS,153.0
 trevor_noah,POLITICS,0.0
 marco_rubio,POLITICS,204.0
@@ -493,8 +493,8 @@ york_citi,WEIRD NEWS,3.0
 kate_middleton,WEIRD NEWS,0.0
 north_carolina,WEIRD NEWS,3.0
 sexual_harass,WEIRD NEWS,0.0
-week_photo,WEIRD NEWS,0.0
 kany_west,WEIRD NEWS,0.0
+week_photo,WEIRD NEWS,0.0
 plan_parenthood,WEIRD NEWS,0.0
 trevor_noah,WEIRD NEWS,0.0
 marco_rubio,WEIRD NEWS,0.0
@@ -543,8 +543,8 @@ york_citi,ENVIRONMENT,4.0
 kate_middleton,ENVIRONMENT,0.0
 north_carolina,ENVIRONMENT,0.0
 sexual_harass,ENVIRONMENT,0.0
-week_photo,ENVIRONMENT,10.0
 kany_west,ENVIRONMENT,0.0
+week_photo,ENVIRONMENT,10.0
 plan_parenthood,ENVIRONMENT,0.0
 trevor_noah,ENVIRONMENT,0.0
 marco_rubio,ENVIRONMENT,0.0
@@ -593,8 +593,8 @@ york_citi,EDUCATION,2.0
 kate_middleton,EDUCATION,0.0
 north_carolina,EDUCATION,0.0
 sexual_harass,EDUCATION,2.0
-week_photo,EDUCATION,0.0
 kany_west,EDUCATION,0.0
+week_photo,EDUCATION,0.0
 plan_parenthood,EDUCATION,0.0
 trevor_noah,EDUCATION,0.0
 marco_rubio,EDUCATION,0.0
@@ -643,8 +643,8 @@ york_citi,CRIME,11.0
 kate_middleton,CRIME,0.0
 north_carolina,CRIME,9.0
 sexual_harass,CRIME,0.0
-week_photo,CRIME,0.0
 kany_west,CRIME,0.0
+week_photo,CRIME,0.0
 plan_parenthood,CRIME,9.0
 trevor_noah,CRIME,0.0
 marco_rubio,CRIME,0.0
@@ -693,8 +693,8 @@ york_citi,SCIENCE,0.0
 kate_middleton,SCIENCE,0.0
 north_carolina,SCIENCE,0.0
 sexual_harass,SCIENCE,0.0
-week_photo,SCIENCE,0.0
 kany_west,SCIENCE,0.0
+week_photo,SCIENCE,0.0
 plan_parenthood,SCIENCE,0.0
 trevor_noah,SCIENCE,0.0
 marco_rubio,SCIENCE,0.0
@@ -743,8 +743,8 @@ york_citi,WELLNESS,15.0
 kate_middleton,WELLNESS,0.0
 north_carolina,WELLNESS,0.0
 sexual_harass,WELLNESS,0.0
-week_photo,WELLNESS,0.0
 kany_west,WELLNESS,0.0
+week_photo,WELLNESS,0.0
 plan_parenthood,WELLNESS,0.0
 trevor_noah,WELLNESS,0.0
 marco_rubio,WELLNESS,0.0
@@ -793,8 +793,8 @@ york_citi,BUSINESS,14.0
 kate_middleton,BUSINESS,0.0
 north_carolina,BUSINESS,6.0
 sexual_harass,BUSINESS,13.0
-week_photo,BUSINESS,0.0
 kany_west,BUSINESS,0.0
+week_photo,BUSINESS,0.0
 plan_parenthood,BUSINESS,0.0
 trevor_noah,BUSINESS,0.0
 marco_rubio,BUSINESS,0.0
@@ -843,8 +843,8 @@ york_citi,STYLE & BEAUTY,0.0
 kate_middleton,STYLE & BEAUTY,191.0
 north_carolina,STYLE & BEAUTY,0.0
 sexual_harass,STYLE & BEAUTY,0.0
-week_photo,STYLE & BEAUTY,197.0
 kany_west,STYLE & BEAUTY,35.0
+week_photo,STYLE & BEAUTY,197.0
 plan_parenthood,STYLE & BEAUTY,0.0
 trevor_noah,STYLE & BEAUTY,0.0
 marco_rubio,STYLE & BEAUTY,0.0
@@ -893,8 +893,8 @@ york_citi,FOOD & DRINK,9.0
 kate_middleton,FOOD & DRINK,0.0
 north_carolina,FOOD & DRINK,0.0
 sexual_harass,FOOD & DRINK,0.0
-week_photo,FOOD & DRINK,0.0
 kany_west,FOOD & DRINK,0.0
+week_photo,FOOD & DRINK,0.0
 plan_parenthood,FOOD & DRINK,0.0
 trevor_noah,FOOD & DRINK,0.0
 marco_rubio,FOOD & DRINK,0.0
@@ -943,8 +943,8 @@ york_citi,MEDIA,0.0
 kate_middleton,MEDIA,0.0
 north_carolina,MEDIA,0.0
 sexual_harass,MEDIA,27.0
-week_photo,MEDIA,0.0
 kany_west,MEDIA,0.0
+week_photo,MEDIA,0.0
 plan_parenthood,MEDIA,0.0
 trevor_noah,MEDIA,4.0
 marco_rubio,MEDIA,0.0
@@ -993,8 +993,8 @@ york_citi,QUEER VOICES,11.0
 kate_middleton,QUEER VOICES,0.0
 north_carolina,QUEER VOICES,36.0
 sexual_harass,QUEER VOICES,0.0
-week_photo,QUEER VOICES,0.0
 kany_west,QUEER VOICES,0.0
+week_photo,QUEER VOICES,0.0
 plan_parenthood,QUEER VOICES,0.0
 trevor_noah,QUEER VOICES,0.0
 marco_rubio,QUEER VOICES,0.0
@@ -1043,8 +1043,8 @@ york_citi,HOME & LIVING,17.0
 kate_middleton,HOME & LIVING,9.0
 north_carolina,HOME & LIVING,0.0
 sexual_harass,HOME & LIVING,0.0
-week_photo,HOME & LIVING,15.0
 kany_west,HOME & LIVING,0.0
+week_photo,HOME & LIVING,15.0
 plan_parenthood,HOME & LIVING,0.0
 trevor_noah,HOME & LIVING,0.0
 marco_rubio,HOME & LIVING,0.0
@@ -1093,8 +1093,8 @@ york_citi,WOMEN,0.0
 kate_middleton,WOMEN,0.0
 north_carolina,WOMEN,0.0
 sexual_harass,WOMEN,31.0
-week_photo,WOMEN,0.0
 kany_west,WOMEN,0.0
+week_photo,WOMEN,0.0
 plan_parenthood,WOMEN,33.0
 trevor_noah,WOMEN,0.0
 marco_rubio,WOMEN,0.0
@@ -1143,8 +1143,8 @@ york_citi,BLACK VOICES,8.0
 kate_middleton,BLACK VOICES,0.0
 north_carolina,BLACK VOICES,6.0
 sexual_harass,BLACK VOICES,0.0
-week_photo,BLACK VOICES,0.0
 kany_west,BLACK VOICES,11.0
+week_photo,BLACK VOICES,0.0
 plan_parenthood,BLACK VOICES,0.0
 trevor_noah,BLACK VOICES,6.0
 marco_rubio,BLACK VOICES,0.0
@@ -1193,8 +1193,8 @@ york_citi,TRAVEL,36.0
 kate_middleton,TRAVEL,0.0
 north_carolina,TRAVEL,0.0
 sexual_harass,TRAVEL,0.0
-week_photo,TRAVEL,0.0
 kany_west,TRAVEL,0.0
+week_photo,TRAVEL,0.0
 plan_parenthood,TRAVEL,0.0
 trevor_noah,TRAVEL,0.0
 marco_rubio,TRAVEL,0.0
@@ -1243,8 +1243,8 @@ york_citi,MONEY,0.0
 kate_middleton,MONEY,0.0
 north_carolina,MONEY,0.0
 sexual_harass,MONEY,0.0
-week_photo,MONEY,0.0
 kany_west,MONEY,0.0
+week_photo,MONEY,0.0
 plan_parenthood,MONEY,0.0
 trevor_noah,MONEY,0.0
 marco_rubio,MONEY,0.0
@@ -1293,8 +1293,8 @@ york_citi,RELIGION,4.0
 kate_middleton,RELIGION,0.0
 north_carolina,RELIGION,7.0
 sexual_harass,RELIGION,0.0
-week_photo,RELIGION,0.0
 kany_west,RELIGION,0.0
+week_photo,RELIGION,0.0
 plan_parenthood,RELIGION,0.0
 trevor_noah,RELIGION,0.0
 marco_rubio,RELIGION,0.0
@@ -1343,8 +1343,8 @@ york_citi,LATINO VOICES,3.0
 kate_middleton,LATINO VOICES,0.0
 north_carolina,LATINO VOICES,0.0
 sexual_harass,LATINO VOICES,0.0
-week_photo,LATINO VOICES,0.0
 kany_west,LATINO VOICES,0.0
+week_photo,LATINO VOICES,0.0
 plan_parenthood,LATINO VOICES,3.0
 trevor_noah,LATINO VOICES,0.0
 marco_rubio,LATINO VOICES,3.0
@@ -1393,8 +1393,8 @@ york_citi,IMPACT,5.0
 kate_middleton,IMPACT,0.0
 north_carolina,IMPACT,0.0
 sexual_harass,IMPACT,0.0
-week_photo,IMPACT,0.0
 kany_west,IMPACT,0.0
+week_photo,IMPACT,0.0
 plan_parenthood,IMPACT,3.0
 trevor_noah,IMPACT,0.0
 marco_rubio,IMPACT,0.0
@@ -1443,8 +1443,8 @@ york_citi,WEDDINGS,0.0
 kate_middleton,WEDDINGS,0.0
 north_carolina,WEDDINGS,0.0
 sexual_harass,WEDDINGS,0.0
-week_photo,WEDDINGS,0.0
 kany_west,WEDDINGS,0.0
+week_photo,WEDDINGS,0.0
 plan_parenthood,WEDDINGS,0.0
 trevor_noah,WEDDINGS,0.0
 marco_rubio,WEDDINGS,0.0
@@ -1493,8 +1493,8 @@ york_citi,COLLEGE,0.0
 kate_middleton,COLLEGE,0.0
 north_carolina,COLLEGE,0.0
 sexual_harass,COLLEGE,5.0
-week_photo,COLLEGE,0.0
 kany_west,COLLEGE,0.0
+week_photo,COLLEGE,0.0
 plan_parenthood,COLLEGE,0.0
 trevor_noah,COLLEGE,0.0
 marco_rubio,COLLEGE,0.0
@@ -1543,8 +1543,8 @@ york_citi,PARENTS,0.0
 kate_middleton,PARENTS,0.0
 north_carolina,PARENTS,0.0
 sexual_harass,PARENTS,0.0
-week_photo,PARENTS,0.0
 kany_west,PARENTS,0.0
+week_photo,PARENTS,0.0
 plan_parenthood,PARENTS,0.0
 trevor_noah,PARENTS,0.0
 marco_rubio,PARENTS,0.0
@@ -1593,8 +1593,8 @@ york_citi,ARTS & CULTURE,2.0
 kate_middleton,ARTS & CULTURE,0.0
 north_carolina,ARTS & CULTURE,0.0
 sexual_harass,ARTS & CULTURE,0.0
-week_photo,ARTS & CULTURE,0.0
 kany_west,ARTS & CULTURE,3.0
+week_photo,ARTS & CULTURE,0.0
 plan_parenthood,ARTS & CULTURE,3.0
 trevor_noah,ARTS & CULTURE,0.0
 marco_rubio,ARTS & CULTURE,0.0
@@ -1643,8 +1643,8 @@ york_citi,STYLE,0.0
 kate_middleton,STYLE,0.0
 north_carolina,STYLE,0.0
 sexual_harass,STYLE,0.0
-week_photo,STYLE,0.0
 kany_west,STYLE,6.0
+week_photo,STYLE,0.0
 plan_parenthood,STYLE,0.0
 trevor_noah,STYLE,0.0
 marco_rubio,STYLE,0.0
@@ -1693,62 +1693,12 @@ york_citi,GREEN,3.0
 kate_middleton,GREEN,0.0
 north_carolina,GREEN,0.0
 sexual_harass,GREEN,0.0
-week_photo,GREEN,0.0
 kany_west,GREEN,0.0
+week_photo,GREEN,0.0
 plan_parenthood,GREEN,0.0
 trevor_noah,GREEN,0.0
 marco_rubio,GREEN,0.0
 mike_penni,GREEN,0.0
-donald_trump,HEALTHY LIVING,6.0
-hillari_clinton,HEALTHY LIVING,0.0
-new_york,HEALTHY LIVING,13.0
-white_hous,HEALTHY LIVING,0.0
-berni_sander,HEALTHY LIVING,0.0
-suprem_court,HEALTHY LIVING,0.0
-health_care,HEALTHY LIVING,51.0
-climat_chang,HEALTHY LIVING,0.0
-new_year,HEALTHY LIVING,30.0
-look_like,HEALTHY LIVING,11.0
-fashion_week,HEALTHY LIVING,0.0
-studi_find,HEALTHY LIVING,14.0
-super_bowl,HEALTHY LIVING,0.0
-morn_email,HEALTHY LIVING,0.0
-stephen_colbert,HEALTHY LIVING,0.0
-north_korea,HEALTHY LIVING,0.0
-kim_kardashian,HEALTHY LIVING,0.0
-ted_cruz,HEALTHY LIVING,0.0
-need_know,HEALTHY LIVING,26.0
-fox_news,HEALTHY LIVING,0.0
-taylor_swift,HEALTHY LIVING,0.0
-valentin_day,HEALTHY LIVING,0.0
-mother_day,HEALTHY LIVING,8.0
-paul_ryan,HEALTHY LIVING,0.0
-social_medium,HEALTHY LIVING,11.0
-photo_poll,HEALTHY LIVING,0.0
-sexual_assault,HEALTHY LIVING,0.0
-joe_biden,HEALTHY LIVING,0.0
-michell_obama,HEALTHY LIVING,4.0
-jimmi_kimmel,HEALTHY LIVING,0.0
-game_throne,HEALTHY LIVING,0.0
-trump_administr,HEALTHY LIVING,0.0
-red_carpet,HEALTHY LIVING,0.0
-high_school,HEALTHY LIVING,4.0
-open_letter,HEALTHY LIVING,0.0
-istar_war,HEALTHY LIVING,0.0
-mental_health,HEALTHY LIVING,70.0
-jimmi_fallon,HEALTHY LIVING,0.0
-trump_say,HEALTHY LIVING,0.0
-box_offic,HEALTHY LIVING,0.0
-york_citi,HEALTHY LIVING,0.0
-kate_middleton,HEALTHY LIVING,0.0
-north_carolina,HEALTHY LIVING,0.0
-sexual_harass,HEALTHY LIVING,0.0
-week_photo,HEALTHY LIVING,0.0
-kany_west,HEALTHY LIVING,0.0
-plan_parenthood,HEALTHY LIVING,0.0
-trevor_noah,HEALTHY LIVING,0.0
-marco_rubio,HEALTHY LIVING,0.0
-mike_penni,HEALTHY LIVING,0.0
 donald_trump,TASTE,0.0
 hillari_clinton,TASTE,3.0
 new_york,TASTE,9.0
@@ -1793,12 +1743,62 @@ york_citi,TASTE,4.0
 kate_middleton,TASTE,0.0
 north_carolina,TASTE,0.0
 sexual_harass,TASTE,0.0
-week_photo,TASTE,0.0
 kany_west,TASTE,0.0
+week_photo,TASTE,0.0
 plan_parenthood,TASTE,0.0
 trevor_noah,TASTE,0.0
 marco_rubio,TASTE,0.0
 mike_penni,TASTE,0.0
+donald_trump,HEALTHY LIVING,6.0
+hillari_clinton,HEALTHY LIVING,0.0
+new_york,HEALTHY LIVING,13.0
+white_hous,HEALTHY LIVING,0.0
+berni_sander,HEALTHY LIVING,0.0
+suprem_court,HEALTHY LIVING,0.0
+health_care,HEALTHY LIVING,51.0
+climat_chang,HEALTHY LIVING,0.0
+new_year,HEALTHY LIVING,30.0
+look_like,HEALTHY LIVING,11.0
+fashion_week,HEALTHY LIVING,0.0
+studi_find,HEALTHY LIVING,14.0
+super_bowl,HEALTHY LIVING,0.0
+morn_email,HEALTHY LIVING,0.0
+stephen_colbert,HEALTHY LIVING,0.0
+north_korea,HEALTHY LIVING,0.0
+kim_kardashian,HEALTHY LIVING,0.0
+ted_cruz,HEALTHY LIVING,0.0
+need_know,HEALTHY LIVING,26.0
+fox_news,HEALTHY LIVING,0.0
+taylor_swift,HEALTHY LIVING,0.0
+valentin_day,HEALTHY LIVING,0.0
+mother_day,HEALTHY LIVING,8.0
+paul_ryan,HEALTHY LIVING,0.0
+social_medium,HEALTHY LIVING,11.0
+photo_poll,HEALTHY LIVING,0.0
+sexual_assault,HEALTHY LIVING,0.0
+joe_biden,HEALTHY LIVING,0.0
+michell_obama,HEALTHY LIVING,4.0
+jimmi_kimmel,HEALTHY LIVING,0.0
+game_throne,HEALTHY LIVING,0.0
+trump_administr,HEALTHY LIVING,0.0
+red_carpet,HEALTHY LIVING,0.0
+high_school,HEALTHY LIVING,4.0
+open_letter,HEALTHY LIVING,0.0
+istar_war,HEALTHY LIVING,0.0
+mental_health,HEALTHY LIVING,70.0
+jimmi_fallon,HEALTHY LIVING,0.0
+trump_say,HEALTHY LIVING,0.0
+box_offic,HEALTHY LIVING,0.0
+york_citi,HEALTHY LIVING,0.0
+kate_middleton,HEALTHY LIVING,0.0
+north_carolina,HEALTHY LIVING,0.0
+sexual_harass,HEALTHY LIVING,0.0
+kany_west,HEALTHY LIVING,0.0
+week_photo,HEALTHY LIVING,0.0
+plan_parenthood,HEALTHY LIVING,0.0
+trevor_noah,HEALTHY LIVING,0.0
+marco_rubio,HEALTHY LIVING,0.0
+mike_penni,HEALTHY LIVING,0.0
 donald_trump,THE WORLDPOST,55.0
 hillari_clinton,THE WORLDPOST,0.0
 new_york,THE WORLDPOST,5.0
@@ -1843,8 +1843,8 @@ york_citi,THE WORLDPOST,0.0
 kate_middleton,THE WORLDPOST,0.0
 north_carolina,THE WORLDPOST,0.0
 sexual_harass,THE WORLDPOST,0.0
-week_photo,THE WORLDPOST,0.0
 kany_west,THE WORLDPOST,0.0
+week_photo,THE WORLDPOST,0.0
 plan_parenthood,THE WORLDPOST,0.0
 trevor_noah,THE WORLDPOST,0.0
 marco_rubio,THE WORLDPOST,0.0
@@ -1893,8 +1893,8 @@ york_citi,GOOD NEWS,0.0
 kate_middleton,GOOD NEWS,0.0
 north_carolina,GOOD NEWS,0.0
 sexual_harass,GOOD NEWS,0.0
-week_photo,GOOD NEWS,0.0
 kany_west,GOOD NEWS,0.0
+week_photo,GOOD NEWS,0.0
 plan_parenthood,GOOD NEWS,0.0
 trevor_noah,GOOD NEWS,0.0
 marco_rubio,GOOD NEWS,0.0
@@ -1943,8 +1943,8 @@ york_citi,WORLDPOST,0.0
 kate_middleton,WORLDPOST,0.0
 north_carolina,WORLDPOST,0.0
 sexual_harass,WORLDPOST,0.0
-week_photo,WORLDPOST,0.0
 kany_west,WORLDPOST,0.0
+week_photo,WORLDPOST,0.0
 plan_parenthood,WORLDPOST,0.0
 trevor_noah,WORLDPOST,0.0
 marco_rubio,WORLDPOST,0.0
@@ -1993,8 +1993,8 @@ york_citi,FIFTY,0.0
 kate_middleton,FIFTY,0.0
 north_carolina,FIFTY,0.0
 sexual_harass,FIFTY,0.0
-week_photo,FIFTY,0.0
 kany_west,FIFTY,0.0
+week_photo,FIFTY,0.0
 plan_parenthood,FIFTY,0.0
 trevor_noah,FIFTY,0.0
 marco_rubio,FIFTY,0.0
@@ -2043,8 +2043,8 @@ york_citi,ARTS,3.0
 kate_middleton,ARTS,0.0
 north_carolina,ARTS,0.0
 sexual_harass,ARTS,0.0
-week_photo,ARTS,0.0
 kany_west,ARTS,0.0
+week_photo,ARTS,0.0
 plan_parenthood,ARTS,0.0
 trevor_noah,ARTS,0.0
 marco_rubio,ARTS,0.0
@@ -2093,15 +2093,15 @@ york_citi,DIVORCE,0.0
 kate_middleton,DIVORCE,0.0
 north_carolina,DIVORCE,0.0
 sexual_harass,DIVORCE,0.0
-week_photo,DIVORCE,0.0
 kany_west,DIVORCE,0.0
+week_photo,DIVORCE,0.0
 plan_parenthood,DIVORCE,0.0
 trevor_noah,DIVORCE,0.0
 marco_rubio,DIVORCE,0.0
 mike_penni,DIVORCE,0.0
 donald_trump,TOTAL,4594.0
 hillari_clinton,TOTAL,1321.0
-new_york,TOTAL,1214.0
+new_york,TOTAL,1213.0
 white_hous,TOTAL,867.0
 berni_sander,TOTAL,699.0
 suprem_court,TOTAL,677.0
@@ -2132,7 +2132,7 @@ jimmi_kimmel,TOTAL,266.0
 game_throne,TOTAL,265.0
 trump_administr,TOTAL,264.0
 red_carpet,TOTAL,262.0
-high_school,TOTAL,261.0
+high_school,TOTAL,260.0
 open_letter,TOTAL,259.0
 istar_war,TOTAL,252.0
 mental_health,TOTAL,247.0

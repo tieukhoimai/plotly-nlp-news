@@ -763,7 +763,7 @@ TOP_BIGRAM_COMPARISION = [
 ]
 
 LDA_DESCRIPTION = [
-    dbc.CardHeader(html.H5("LDA Preprocessing")),
+    dbc.CardHeader(html.H5("LDA Modelling Result")),
     dbc.CardBody(
         [
             html.P("Latent Dirichlet Allocation(LDA) is a popular algorithm for topic modeling with implementations in the Python’s Gensim package. LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion."),
@@ -796,7 +796,7 @@ LDA_CHART_TOPIC_BY_TOP_CATEGORY = [
     dbc.CardHeader(html.H5("Topic Volum across Top Category")),
     dbc.CardBody(
         [
-            dcc.Graph(figure=plot_lda_top_category_by_topic()),
+            dcc.Graph(figure=plot_lda_topic_by_top_category()),
             html.P("Topic 0 dominates the 'POLITICS' category with more than 20k articles, evident from the high count in the corresponding bar"),
             html.P("Other topics are more evenly distributed across the top 10 categories, showcasing a balanced distribution."),
             dcc.Graph(figure=plot_lda_top_category_by_topic()),
@@ -854,7 +854,7 @@ BODY = dbc.Container(
                 style={"marginTop": 30}),
 
         #### PART 3
-        html.H4("LDA TOPIC - MODELLING", style={"marginTop": 30}),
+        html.H4("LDA - TOPIC MODELLING", style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(LDA_DESCRIPTION)),],
                 style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(LDA_CHART_BY_TOPIC)),],
