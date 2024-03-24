@@ -30,7 +30,6 @@ cloudpathlib==0.16.0
 comm==0.2.0
 confection==0.1.4
 contourpy==1.2.0
-cryptography==41.0.7
 cycler==0.12.1
 cymem==2.0.8
 dash==2.14.2
