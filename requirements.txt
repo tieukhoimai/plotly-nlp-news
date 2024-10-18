@@ -182,7 +182,7 @@ weasel==0.3.4
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.7.0
-Werkzeug==2.2.2
+Werkzeug==3.0.3
 widgetsnbextension==4.0.9
 wordcloud==1.9.3
 wrapt==1.10.11
