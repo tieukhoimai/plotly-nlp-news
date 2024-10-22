@@ -15,7 +15,7 @@ Each record in the dataset consists of the following attributes:
 
 ## Project Description
 
-The project includes 3 phase:
+The project includes 4 phase:
 - Part 1: DATA EXPLORATION - data_cleaning.ipynb
 - Part 2: DATA CLEANING - data_cleaning.ipynb
 - Part 3: TEXTUAL PREPROCESSING AND ANALYSIS - data_cleaning.ipynb
