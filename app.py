@@ -2,7 +2,6 @@
 """
 Module doc string
 """
-from sklearn.manifold import TSNE
 from wordcloud import WordCloud, STOPWORDS
 from dateutil import relativedelta
 from dash.dependencies import Output, Input, State
@@ -25,8 +24,6 @@ import plotly.graph_objs as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 
-
-
 import warnings
 warnings.filterwarnings("ignore")
 warnings.simplefilter("ignore", category=UserWarning)
@@ -45,7 +42,6 @@ DF = pd.read_json('data/News_Category_Dataset_v3.json', lines=True)
 DEDUP_DF = pd.read_csv("data/dedup_data.csv")
 PROCESSED_DF = pd.read_csv("data/processed_data.csv")
 DOMINANT_TOPIC_DF = pd.read_csv('data/lda_data.csv')
-
 LDA_MODEL = LdaModel.load("model/model_lda.model")
 
 """
